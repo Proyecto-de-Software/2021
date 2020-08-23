@@ -1,0 +1,10 @@
+site_name: Prouecto de Softare - Guías 2020
+theme: 'material'
+nav:
+  - Home: index.md
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - codehilite
+
