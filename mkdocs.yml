@@ -3,6 +3,7 @@ theme: 'material'
 nav:
   - Home: index.md
   - Comandos: commands.md
+  - Ssh: ssh.md
 markdown_extensions:
   - toc:
       permalink: true
