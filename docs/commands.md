@@ -8,35 +8,56 @@ trabajan con Windows.
 ## Comandos de consola
 
 ```bash
-pwd              # Imprime el directorio actual.
+# Imprimir el directorio actual.
+pwd
 
-ls               # Lista todos los archivos y directorios del directorio actual.
+# Listar todos los archivos y directorios del directorio actual.
+ls
 
-ls -a            # Igual que el anterior pero unlcuye los ocultos.
+# Igual que el anterior pero incluye los ocultos.
+ls -a
 
-mkdir dirname    # Crea un nuevo directorio en el actual llamado "dirname".
+# Crear un nuevo directorio en el actual llamado "dirname".
+mkdir dirname
 
-touch filename   # Crea un archivo en el directorio actual llamado "filename".
+# Crear un archivo en el directorio actual llamado "filename".
+touch filename
 
-cd code/python   # Se nueve al directorio "code/python".
+# Moverse al directorio "code/python".
+cd code/python
 ```
 
 ## Comandos de git
 
 ```bash
-git status                    # Muestra el estado de los archivos respecto al repositorio.
+# Mostrar el estado de los archivos respecto al repositorio.
+git status
 
-git add <filename>            # Agrega el archivo filename al versionado de git.
+# Agregar el archivo filename al versionado de git.
+git add <filename>
 
-git add .                     # Agrega todos los archivos que sufieron una modificación el versionado.
+# Agregae todos los archivos que sufieron una modificación al versionado.
+git add .
 
-git commit -m <mensaje>       # Genera un commit con todos los archivos que fueron modificados y gregados a git. Documenta el commit con el mensaje que escribamos.
+# Generar un commit con todos los archivos que fueron modificados y gregados a
+# git. Documenta el commit con el mensaje que escribamos.
+git commit -m <mensaje>
 
-git checkout -b <branch_name> # Genera una nueva rama localmente con el nombre <branch_name>. Y se mueve a esa rama.
+# Generar una nueva rama localmente con el nombre <branch_name>. Y moverse a
+# esa rama.
+git checkout -b <branch_name>
 
-git checkout <branch_name>    # Se mueve a la rama <branch_name> local y si no existe la crea y se mueve.
+# Moverse a la rama <branch_name> local y si no existe la crea y se mueve.
+git checkout <branch_name>
 
-git push origin <branch_name> # Se suben los commits locales a la rama <branch_name> ubicada en el remote con nombre origin.
+# Subir los cambios en commits locales a la rama <branch_name> ubicada en el
+# remote con nombre origin.
+git push origin <branch_name>
 
-git pull origin <branch_name> # Descarga los commits que estén en la rama del remote origin para la rama <branch_name>.
+# Descargar cambios en commits que estén en la rama del remote origin para la
+# rama <branch_name>.
+git pull origin <branch_name>
+
+# Fusionar la rama <branch_name> dentro de la rama actual.
+git merge <branch_name>
 ```
