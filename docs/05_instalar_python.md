@@ -1,37 +1,31 @@
 Instalación de Python
 =====================
 
-!!! warning
-    Tener en cuenta que esta guía de instalación de Python no hace falta si se
-    utilza la máquina virtual que entregamos en la cátedra para trabajar dado
-    que tiene todo instalado.
-    La máquina vistual la pueden descargar desde [aquí](https://catedras.info.unlp.edu.ar/mod/url/view.php?id=24366)
-
-En esta guía vamos a ver disintas formas de realizar la instalación de la
-la versión específica de Python que se utilizará en la cátedra para distintos
+En esta guía vamos a ver distintas formas de realizar la instalación de la
+la versión específica de **Python** que se utilizará en la cátedra para distintos
 sistemas operativos.
 
-El objetivo es que todos los alumnos que cursen la cátedra puadan instalar
-en sus sistemas operativos la versión específica de Python que vamos a usar
+El objetivo es que todos los alumnos que cursen la cátedra puedan instalar
+en sus sistemas operativos la versión específica de **Python** que vamos a usar
 dentro de la cátedra.
 
 El mecanismo para esto es utilizar una herramienta de manejo de versiones para
-python (Python Versión Manager) en los sistemas operativos Linux y MacOS.
+**Python** (Python Versión Manager) en los sistemas operativos Linux y MacOS.
 
 En el caso del sistema operativo Windows no vamos a usar esta herramienta ya
 que no funcionan del todo bien, y tampoco algunas alternativas que probamos. En
-este caso vamos a instalar la versión específica de Python que utilicemos.
+este caso vamos a instalar la versión específica de **Python** que utilicemos.
 
 
-## ¿Por qué usar una herramienta para menejar versiones?
+## ¿Por qué usar una herramienta para manejar versiones?
 
 La idea de usar este tipo de herramientas son:
 
-- Instalar prácticamente cualquier versión de Python (o del lenguaje que sea)
-- Tener instaladas multiples versiones
+- Instalar prácticamente cualquier versión de **Python** (o del lenguaje que sea)
+- Tener instaladas múltiples versiones
 
 Otro objetivo para esta cátedra es lograr que todos ustedes tengan exactamente
-la misma versión de Python.
+la misma versión de **Python**.
 
 La herramienta que vamos a usar es [`pyenv`](git@github.com:pyenv/pyenv.git)
 
@@ -39,14 +33,14 @@ La herramienta que vamos a usar es [`pyenv`](git@github.com:pyenv/pyenv.git)
 
 ### Instalación con Git (Linux y MacOS) RECOMENDADA
 
-Hacer el checkout de `pyenv` en el directorio donde quieras que se instale.
+Hacer el *checkout* de `pyenv` en el directorio donde quieras que se instale.
 Un buen lugar puede ser `$HOME/.pyenv`.
 
 ```bash
 git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 ```
 
-Define la variable de entorno `PYENV_ROOT` para tener disponible el path donde
+Define la variable de entorno `PYENV_ROOT` para tener disponible el *path* donde
 fue clonado el repositorio y agrega `$PYENV_ROOT/bin` a la variable `$PATH` para
 tener acceso al comando `pyenv` en la terminal.
 
@@ -72,14 +66,14 @@ echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nf
     Al igual que en el paso anterior reemplaza con `~/.zshrc` o `~/.bashrc` en
     el comando según corresponda.
 
-Luego restartea la terminal para que tome los cambios.
+Luego reiniciar la terminal para que tome los cambios.
 
 !!! info
     Guía completa en el [README de pyenv](https://github.com/pyenv/pyenv).
 
 ### Uso de `pyenv`
 
-Para buscar que version de Python queremos instalar podemos usar:
+Para buscar que versión de **Python** queremos instalar podemos usar:
 
 ```bash
 pyenv install 3.6.8
@@ -120,8 +114,6 @@ Descarga el instalador [aquí](https://www.python.org/ftp/python/3.6.8/python-3.
     ![Python Windows Installer](img/python-win.png)
 
 Otros instaladores: https://www.python.org/downloads/release/python-368/
-
-## Conclusión
 
 Ahora tenemos la versión de Python que necesitamos en nuestro sistema y estamos
 listo para utilizarlo.

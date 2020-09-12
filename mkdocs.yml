@@ -1,14 +1,15 @@
 site_name: Prouecto de Softare - Guías 2020
 theme: 'material'
 nav:
-  - Home: 01_index.md
-  - Comandos: 02_commands.md
-  - Ssh: 03_ssh.md
-  - Ssh Gitlab: 04_ssh_gitlab.md
-  - Instalar Git: 05_instalar_git.md
-  - Instalar Python: 06_instalar_python.md
-  - Manejo de Paquetes: 07_manejo_de_paquetes.md
-  - Entornos Virtuales: 08_entornos_virtuales.md
+  - Home: index.md
+  - Comandos: 01_commands.md
+  - Ssh: 02_ssh.md
+  - Ssh Gitlab: 03_ssh_gitlab.md
+  - Instalar Git: 04_instalar_git.md
+  - Instalar Python: 05_instalar_python.md
+  - Manejo de Paquetes: 06_manejo_de_paquetes.md
+  - Entornos Virtuales: 07_entornos_virtuales.md
+  - Merge Requests en Gitlab: 08_merge_request.md
 markdown_extensions:
   - toc:
       permalink: true

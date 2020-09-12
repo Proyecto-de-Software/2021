@@ -1,16 +1,9 @@
 Guía de Git
 ===========
 
-En la explicación práctica hablamos sobre los conceptos de git. Aquí están las
-[diapositivas](https://docs.google.com/presentation/d/1pQyjBfV_tz7M2PCS3nvcnHsRaJmJaWhbYeIzzddTfVA/edit?usp=sharing).
+En la explicación práctica hablamos sobre los conceptos de `git`.
 
 ## Instalación
-
-!!! warning
-    Tener en cuenta que esta guía de instalación de git no hace falta si se
-    utilza la máquina virtual que entregamos en la cátedra para trabajar dado
-    que tiene todo instalado.
-    La máquina vistual la pueden descargar desde [aquí](https://catedras.info.unlp.edu.ar/mod/url/view.php?id=24366)
 
 ### En Debian-based
 
@@ -42,7 +35,7 @@ vamos a utilizar `GitBash` por lo cual deben asegurarse que se instale.
 ## Crear una cuenta de Github
 
 Para crear una cuenta tienen que entrar a la
-[web de Github](https://github.com/) y regitrarse (Sing up).
+[web de Github](https://github.com/) y registrarse (Sing up).
 
 ## ¿Cómo usar Git?
 
@@ -53,7 +46,7 @@ Vamos a ver dos formas para comenzar a trabajar con `Git`:
 
 ### Configurar información en Git
 
-En git cuando se va a realizar una operación para generar una nueva versión del
+En `git` cuando se va a realizar una operación para generar una nueva versión del
 código es necesario contar con información de usuario. Por esto es necesario que
 configuremos lo siguiente:
 
