@@ -51,6 +51,8 @@ Para confirmar la creación del **MR** se debe hacer *submit* con el botón
 
 ![Merge Request Form](img/mr_5.jpg)
 
+## Confirmar MR
+
 Una vez confirmado pasamos a la vista del **Merge Request** creado donde se
 pueden visualizar las cambios, comentar, aprobar los cambios y finalmente
 realizar el *merge*.
