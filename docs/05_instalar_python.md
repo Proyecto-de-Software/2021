@@ -1,7 +1,7 @@
 Instalación de Python
 =====================
 
-En esta guía vamos a ver distintas formas de realizar la instalación de la
+En esta guía vamos a ver distintas formas de realizar la instalación de
 la versión específica de **Python** que se utilizará en la cátedra para distintos
 sistemas operativos.
 
@@ -22,7 +22,7 @@ este caso vamos a instalar la versión específica de **Python** que utilicemos.
 La idea de usar este tipo de herramientas son:
 
 - Instalar prácticamente cualquier versión de **Python** (o del lenguaje que sea)
-- Tener instaladas múltiples versiones
+- Permitir tener instaladas múltiples versiones
 
 Otro objetivo para esta cátedra es lograr que todos ustedes tengan exactamente
 la misma versión de **Python**.
@@ -52,7 +52,7 @@ echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bash_profile
 !!! warning
     - Si usas **ZSH** modifica el comando con `~/.zshrc` en lugar de
     `~/.bash_profile`.
-    - Para **Ubuntu** y **Fedora** usa `~/.bashrc` en en lugar de
+    - Para **Ubuntu** y **Fedora** usa `~/.bashrc` en lugar de
     `~/.bash_profile`.
 
 Finalmente para terminar de configurarlo y tener el autocompletado en la consola

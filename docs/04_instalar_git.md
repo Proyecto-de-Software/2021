@@ -19,6 +19,10 @@ sudo apt install git
 sudo yum upgrade
 sudo yum install git
 ```
+### En Arch-based
+```bash
+sudo pacman -S git
+```
 
 ### En MacOS
 

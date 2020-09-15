@@ -14,7 +14,7 @@ pwd
 # Listar todos los archivos y directorios del directorio actual.
 ls
 
-# Igual que el anterior pero incluye los ocultos.
+# Igual que el anterior pero incluye los archivos y directorios ocultos.
 ls -a
 
 # Crear un nuevo directorio en el actual llamado "dirname".
@@ -36,10 +36,10 @@ git status
 # Agregar el archivo filename al versionado de git.
 git add <filename>
 
-# Agregae todos los archivos que sufieron una modificación al versionado.
+# Agregar todos los archivos que sufieron una modificación al versionado.
 git add .
 
-# Generar un commit con todos los archivos que fueron modificados y gregados a
+# Generar un commit con todos los archivos que fueron modificados y agregados a
 # git. Documenta el commit con el mensaje que escribamos.
 git commit -m <mensaje>
 

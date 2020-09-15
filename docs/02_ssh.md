@@ -40,7 +40,7 @@ Enter passphrase (empty for no passphrase):
 Enter same passphrase again:
 ```
 
-Este password no es obligatorio así que puede dejarlo en blanco
+Este passphrase no es obligatorio así que puede dejarlo en blanco
 pulsando nuevamente la tecla Enter.
 
 !!! Info

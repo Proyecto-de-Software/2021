@@ -54,7 +54,7 @@ Para confirmar la creación del **MR** se debe hacer *submit* con el botón
 ## Confirmar MR
 
 Una vez confirmado pasamos a la vista del **Merge Request** creado donde se
-pueden visualizar las cambios, comentar, aprobar los cambios y finalmente
+pueden visualizar los cambios, comentar, aprobar los cambios y finalmente
 realizar el *merge*.
 
 Algunas veces la rama que queremos funcionar puede tener conflictos. Estos

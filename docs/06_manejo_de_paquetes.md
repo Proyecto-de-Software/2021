@@ -2,7 +2,7 @@ Manejo de paquetes en Python
 ============================
 
 El manejador de paquetes `pip` tiene como objetivo realizar la instalación de
-paquetes externos o librerías que querramos usar en nuestros proyectos.
+paquetes externos o librerías que queramos usar en nuestros proyectos.
 
 La herramienta sirve para descargar las mismas del repositorio de código
 [`pypi`](https://pypi.org/) donde están publicadas. Aunque se podría configurar
@@ -25,17 +25,17 @@ Para instalar una librería con `pip` ejecutamos:
 pip install art
 ```
 
-Esto va a instalar la ultipa versión. Si queremos alguna versión en particular
+Esto va a instalar la ultima versión. Si queremos alguna versión en particular
 ejecutamos:
 
 ```bash
 pip install art==4.5
 ```
 
-Deberíamos hacer esto por cada librería que querramos instalar en el sistema.
+Deberíamos hacer esto por cada librería que queramos instalar en el sistema.
 
-Una forma práctica para no tener que repetirlo por cada librería que querramos
-usar es tener un archivo donde poner toda las librerías que querramos de la
+Una forma práctica para no tener que repetirlo por cada librería que queramos
+usar es tener un archivo donde poner toda las librerías que queramos de la
 siguiente manera:
 
 ```python
