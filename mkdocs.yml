@@ -10,6 +10,7 @@ nav:
   - Manejo de Paquetes: 06_manejo_de_paquetes.md
   - Entornos Virtuales: 07_entornos_virtuales.md
   - Merge Requests en Gitlab: 08_merge_request.md
+  - Aplicación Base: 09_template.md
 markdown_extensions:
   - toc:
       permalink: true
