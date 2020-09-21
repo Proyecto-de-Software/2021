@@ -10,11 +10,13 @@ cátedra.
 
 ## Dependencias
 
-Las dependencias se encuentran en el archivo `requirements.txt`:
+Las dependencias del proyecto se encuentran en el archivo `requirements.txt`:
 
 - Flask v1.0.2       -> web framework
 - PyMysql v0.9.2     -> conexión a la base
 - Flask-Session v0.3 -> sesiones almacenadas en el servidor
+
+Cuando vayan agregando nuevas dependencias con el manejador de paquetes de python (pip), es necesario que se vayan agregando en archivo para que luego  sus compañeros/as o en producción puedan instalarse las mismas. Se pueden ingresar editando el archivo y guardándolo `'paquete'=='numero de versión'` como por ejemplo  `Flask==1.0.2`. Para más ejemplos revisar el archivo `requirements.txt` en la aplicación template.
 
 ## Archivos y directorios importantes
 
@@ -27,8 +29,8 @@ directorios:
 $ tree -L 1
 .
 ├── app              # directorio principal de código.
-├── config.py        # módulo de configuración.
-├── db               # directorio con dump inicial.
+├── config.py        # módulo de configuración de la aplicación.
+├── db               # directorio con dump inicial de la base de datos.
 ├── README.md
 ├── requirements.txt # listado de dependencias.
 └── run.py           # entry point.
@@ -41,7 +43,7 @@ $ tree -L 1
 tree -L 2
 .
 ├── app
-│   ├── db.py        # módulo de conecxión con la base de datos.
+│   ├── db.py        # módulo de conexión con la base de datos.
 │   ├── helpers      # directorio con funciones auxiliares.
 │   ├── __init__.py  # módulo principal.
 │   ├── models       # directorio con los modelos (Models).
@@ -85,10 +87,11 @@ Aquí se colocan los archivos estáticos y que queremos que puedan ser accedidos
 públicamente en nuestra aplicación, como pueden ser hojas de estilo, scripts js
 e imágenes.
 
-### Tempaltes
+### Templates
 
 Directorio de los archivos de template de Jinja2. En general se suele crear
 un subdirectorio por cada uno de los controladores creados en `resources`.
+Seria como las vistas en el modelo MVC.
 
 ### Archivo `__init__.py`
 
@@ -99,7 +102,7 @@ la configuración:
 - Crea la aplicación `flask`.
 - Levanta la configuración desde el módulo `config.py` según el `environment`.
 - Configura las sesiones, la base de datos y el motor de templates.
-- Luego configura todas las rutas de la aplicación.
+- Configura todas las rutas de la aplicación.
 - Se registran los manejadores en caso de error.
 
 ## Configuración
@@ -113,10 +116,10 @@ ejecución local de cada desarrollador. La clase está preparada para que cada
 desarrollador agregue en variables de entorno los valores particulares de cada
 entorno local.
 
-En `ProductionConfig` se colocan los valores del para ejecutar la aplicación
+En `ProductionConfig` se colocan los valores para ejecutar la aplicación
 en el entorno del server remoto. También esta preparada para tomar los valores
 de variables de entorno, pero en este caso se **debe agregar como valores por
-default los datos que se les otrogaron de la base**. Esto último es muy
+default los datos que se les otorgaron de la base**. Esto último es muy
 importante dado que en el servidor no se encuentran a agregadas las variables
 de entorno.
 
@@ -136,17 +139,15 @@ if __name__ == "__main__":
 Es necesario para la correcta ejecución configurar la variable de entorno
 `FLASK_ENV` que se toma como parámetro para realizar la carga de la
 configuración de nuestra aplicación.
+Para ejecutar el ambiente local como ambiente de desarrollo la manera seria la siguiente: `FLASK_ENV=development python run.py` 
 
 ## ¿Cómo usar el template?
 
 - Descargar del repositorio el último tag.
-- Eliminar el directorio `.git`.
-- Copiar esos archivos dentro de nuestro proyecto.
-- Para que la aplicación funcione es necesario cargar el archivo `db/schema.sql`
-  en nuestra base de datos local.
-- Configurar correctamente la clase `DevelopmentConfig` con los valores de nuestro
-  entorno local.
-- Crear un entorno virtual dentro de nuestro proyecto:
+- Copiar los archivos de la aplicacion template a dentro del respositorio de su proyecto (si tienen visibles los archivos ocultos, no hay que copiar el directorio `.git`).
+- Cargar el archivo `db/schema.sql` en su base de datos local. Para eso pueden utilizar un cliente de base de datos como por ejemplo: `phpMyAdmin` o `mysql workbench` o la misma command line de mysql `mysql -h "host" -u "user" -p "password" "database" < db/schema.sql`. Es importante cargar este archivo sino la aplicacion no funcionara.
+- Configurar correctamente la clase `DevelopmentConfig` con los valores del entorno local del proyecto.
+- Crear un entorno virtual dentro de nuestro proyecto es necesario ejecutar lo siguiente:
 ```bash
 virtualenv venv
 ```
@@ -158,7 +159,7 @@ virtualenv venv
 ```bash
 pip install -r requirements.txt
 ```
-- Ejecutar la aplicación indicando el entorno
+- Para ejecutar la aplicación indicando el entorno:
 ```bash
 FLASK_ENV=development python run.py
 ```
@@ -171,3 +172,4 @@ FLASK_ENV=development python run.py
  * Debugger is active!
  * Debugger PIN: 112-188-961
 ```
+El proyecto queda ejecutandose en el puerto 5000, en un navegador acceder a http://localhost:5000 
