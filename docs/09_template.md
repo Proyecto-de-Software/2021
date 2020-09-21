@@ -153,7 +153,7 @@ siguiente: `FLASK_ENV=development python run.py`
   o clonarlo desde el [repositorio](https://github.com/Proyecto-de-Software/unlp-api-python).
 - Copiar los archivos de la aplicacion template a dentro del respositorio de su
   proyecto (si tienen visibles los archivos ocultos, no hay que copiar el
-  directorio `.git`).
+  directorio `.git` aunque sí es recomendable copiar el archivo `.gitignore`).
 - Cargar el archivo `db/schema.sql` en su base de datos local. Es importante
   cargar este archivo sino la aplicacion no funcionara. Para eso pueden
   utilizar un cliente de base de datos como por ejemplo: `phpMyAdmin` o `mysql
