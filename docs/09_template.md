@@ -8,6 +8,11 @@ cátedra.
 - Python: 3.6.x
 - Mysql: 10.1.44-MariaDB
 
+## Requsitos
+
+- Tener instalado Python en su sistema. Con las librerías `pip` y `virtualenv`
+- Tener instalada de forma local una base de datos MySQL o MariaDB.
+
 ## Dependencias
 
 Las dependencias del proyecto se encuentran en el archivo `requirements.txt`:
@@ -39,7 +44,6 @@ $ tree -L 1
 ├── README.md
 ├── requirements.txt # listado de dependencias.
 └── run.py           # entry point.
-
 ```
 
 ## App
@@ -161,8 +165,10 @@ siguiente: `FLASK_ENV=development python run.py`
 ```bash
 mysql -h "host" -u "user" -p "password" "database" < db/schema.sql
 ```
-- Configurar correctamente la clase `DevelopmentConfig` con los valores del entorno local del proyecto.
-- Crear un entorno virtual dentro de nuestro proyecto es necesario ejecutar lo siguiente:
+- Configurar correctamente la clase `DevelopmentConfig` con los valores del
+  entorno local del proyecto.
+- Crear un entorno virtual dentro de nuestro proyecto es necesario ejecutar lo
+  siguiente:
 ```bash
 virtualenv venv
 ```
