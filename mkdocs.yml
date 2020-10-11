@@ -11,6 +11,7 @@ nav:
   - Entornos Virtuales: 07_entornos_virtuales.md
   - Merge Requests en Gitlab: 08_merge_request.md
   - Aplicación Base: 09_template.md
+  - Guías de Estilo: 10_guias_de_estilo.md
 markdown_extensions:
   - toc:
       permalink: true
