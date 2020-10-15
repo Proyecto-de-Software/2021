@@ -1,12 +1,12 @@
 # Guía de estilos
 
-Las guía de estilo ayudan a los equipos de desarrolladores a escribir código
-consistente haciendo que sea fácil de entender para todos los miembros del
+Las guías de estilo ayudan a los equipos de desarrollo a escribir código
+consistente simplificando su entendimiento a todos/as los/as miembros del
 equipo.
 
-Python define en **PEP8** la guía de estilos base y en **PEP257** la convención
-para Docstrings. Teniendo esta referencia vamos a nombrar las normas mas
-importantes que esperamos que traten de cumplirlas en el trabajo.
+Python define en **PEP8** como guía de estilos base y en **PEP257** la convención
+para Docstrings. Teniendo esta referencia vamos a mencionar las normas mas
+importantes que esperamos que traten de cumplir en el trabajo.
 
 Antes de comenzar a nombrarlas es necesario decir de una regla base a todas las
 siguientes a la hora de desarrollar una aplicación en equipo: **ser
@@ -22,33 +22,46 @@ reglas para el estilo de escritura del código**.
 - No dejar líneas en blanco luego de la línea `def`
 - No dejar espacios dentro de los paréntesis, corchetes y las llaves
 ```python
-  # good
+  # bien
   spam(ham[1], {eggs: 2}, [])
 
-  # bad
+  # mal
   spam( ham[ 1 ], { eggs: 2 }, )
 ```
 - Rodear los operadores con un espacio en blanco de ambos lados
 ```python
-  # good
+  # bien
   x == 1
 
-  # bad
+  # mal
   x<1
 ```
 - No usar espacios en blanco alrededor del `=` cuando se pasa un `keyword
   argument` o se define un valor por defecto en una función
+```python
+  # bien
+  def function_name(keyword_argument=value):
+      pass
+
+  function_name(keyword_argument=1)
+
+  # mal
+  def function_name(keyword_argument = value):
+      pass
+
+  function_name(keyword_argument = 1)
+```
 - Usar líneas en blanco para la separación de lógica dentro de las
   funciones/métodos siempre que esté justificado
 - Mover los argumentos de una función de una nueva línea con indentación si no
   entran todos en la primer línea
 ```python
-  # Good
+  # bien
   def long_function_name(var_one, var_two, var_three,
           var_four):
       print(var_one)
 
-  # Good
+  # bien
   def long_function_name(
       var_one,
       var_two,
@@ -60,7 +73,7 @@ reglas para el estilo de escritura del código**.
 - Mover las condiciones a nuevas líneas si no entran en el máximo determinado.
 Esto te ayudará a entender la condición mirando de arriba hacia abajo.
 ```python
-  # Good
+  # bien
   if (this_is_one_thing
       and that_is_another_thing
       or that_is_third_thing
@@ -78,11 +91,11 @@ Esto te ayudará a entender la condición mirando de arriba hacia abajo.
 ```
 - Use argumentos nombrados para aumentar la legibilidad.
 ```python
-  # Bad
-  urlget('[http://google.com](http://google.com/)', 20)
-
-  # Good
+  # bien
   urlget('[http://google.com](http://google.com/)', timeout=20)
+
+  # mal
+  urlget('[http://google.com](http://google.com/)', 20)
 ```
 - Nunca termines tus líneas con punto y coma y no las uses para tener dos
   sentencias en la misma línea.
@@ -100,17 +113,17 @@ Esto te ayudará a entender la condición mirando de arriba hacia abajo.
 ```
 - Siempre comience el bloque de código en una nueva línea
 ```python
-  # Bad
-  if flag: return None
-  
-  # Good
+  # bien
   if flag:
       return None
+
+  # mal
+  if flag: return None
 ```
 - Separa el símbolo `#` del contenido del comentario con un espacio en blanco
 ```python
-  #bad comment
   # good comment
+  #bad comment
 ```
 
 ## Nombres
