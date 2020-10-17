@@ -1,4 +1,4 @@
-site_name: Prouecto de Softare - Guías 2020
+site_name: Proyecto de Software - Guías 2020
 theme: 'material'
 nav:
   - Home: index.md
