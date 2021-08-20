@@ -1,5 +1,9 @@
 site_name: Proyecto de Software 2021
-theme: 'material'
+theme:
+  name: 'material'
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticy
 nav:
   - Inicio: index.md
   - Teorías: 
