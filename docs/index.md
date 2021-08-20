@@ -2,6 +2,7 @@
 
 Información de la infraestructura del servidor de la asignatura Proyecto de Software 2021.
 
+## Infraestructura
 ![infraestructura](images/infraestructura.png)
 
 ## Versiones a utilizar
@@ -14,7 +15,7 @@ Información de la infraestructura del servidor de la asignatura Proyecto de Sof
 * Backend Flask: [https://admin-grupoXX.proyecto2021.linti.unlp.edu.ar/](https://admin-grupoXX.proyecto2021.linti.unlp.edu.ar/)
 * Frontend Vue: [https://grupoXX.proyecto2021.linti.unlp.edu.ar/](https://grupoXX.proyecto2021.linti.unlp.edu.ar/)
 
-## Logs de Apache:
+## Logs de Apache
 * Errores: [https://grupoXX.proyecto2021.linti.unlp.edu.ar/logs/apache_error_log](https://grupoXX.proyecto2021.linti.unlp.edu.ar/logs/apache_error_log)
 * Accesos: [https://grupoXX.proyecto2021.linti.unlp.edu.ar/logs/apache_access_log](https://grupoXX.proyecto2021.linti.unlp.edu.ar/logs/apache_access_log)
 
