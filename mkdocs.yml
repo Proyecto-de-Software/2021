@@ -6,13 +6,20 @@ theme:
     - navigation.tabs.sticy
   palette:
     - scheme: default
+      primary: indigo
+      accent: indigo
       toggle:
-        icon: material/lightbulb-outline
+        icon: material/toggle-switch-off-outline
         name: Switch to dark mode
     - scheme: slate
+      primary: red
+      accent: red
       toggle:
-        icon: material/lightbulb
+        icon: material/toggle-switch
         name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
 
 nav:
   - Inicio: index.md
