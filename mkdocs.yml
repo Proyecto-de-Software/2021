@@ -1,20 +1,25 @@
-site_name: Proyecto de Software - Guías 2020
+site_name: Proyecto de Software 2021
 theme: 'material'
 nav:
-  - Home: index.md
-  - Comandos: 01_commands.md
-  - Ssh: 02_ssh.md
-  - Ssh Gitlab: 03_ssh_gitlab.md
-  - Instalar Git: 04_instalar_git.md
-  - Instalar Python: 05_instalar_python.md
-  - Manejo de Paquetes: 06_manejo_de_paquetes.md
-  - Entornos Virtuales: 07_entornos_virtuales.md
-  - Merge Requests en Gitlab: 08_merge_request.md
-  - Aplicación Base: 09_template.md
-  - Guías de Estilo: 10_guias_de_estilo.md
+  - Inicio: index.md
+  - Teorías: 
+    - Listado: 01_teorias.md
+    - 0 - Presentacion: /teorias/clase0/
+  - Práctica: 02_practicas.md
+  - Herramientas: 03_herramientas.md
+  - Guías:
+    - Comandos: guias/01_commands.md
+    - Ssh: guias/02_ssh.md
+    - Ssh Gitlab: guias/03_ssh_gitlab.md
+    - Instalar Git: guias/04_instalar_git.md
+    - Instalar Python: guias/05_instalar_python.md
+    - Manejo de Paquetes: guias/06_manejo_de_paquetes.md
+    - Entornos Virtuales: guias/07_entornos_virtuales.md
+    - Merge Requests en Gitlab: guias/08_merge_request.md
+    - Aplicación Base: guias/09_template.md
+    - Guías de Estilo: guias/10_guias_de_estilo.md
 markdown_extensions:
   - toc:
       permalink: true
   - admonition
   - codehilite
-
