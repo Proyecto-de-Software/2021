@@ -29,7 +29,8 @@ nav:
     - Listado: 01_teorias.md
     - Presentacion: 01_teorias/clase0/
   - Práctica: 02_practicas.md
-  - Herramientas: 03_herramientas.md
+  - Explicaciones: 03_explicaciones.md
+  - Herramientas: 04_herramientas.md
   - Guías:
     - Comandos: guias/01_commands.md
     - Ssh: guias/02_ssh.md
