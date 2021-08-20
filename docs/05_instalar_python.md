@@ -27,7 +27,7 @@ La idea de usar este tipo de herramientas son:
 Otro objetivo para esta cátedra es lograr que todos ustedes tengan exactamente
 la misma versión de **Python**.
 
-La herramienta que vamos a usar es [`pyenv`](git@github.com:pyenv/pyenv.git)
+La herramienta que vamos a usar es [`pyenv`](https://github.com/pyenv/pyenv)
 
 ## Linux y MacOS
 
