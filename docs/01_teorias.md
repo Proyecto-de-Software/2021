@@ -1,3 +1,3 @@
 # Teorías
 
-# [0 - Presentación inicial](/teorias/clase0/)
+* [Presentación inicial](clase0)

@@ -4,7 +4,7 @@ nav:
   - Inicio: index.md
   - Teorías: 
     - Listado: 01_teorias.md
-    - 0 - Presentacion: /teorias/clase0/
+    - Presentacion: 01_teorias/clase0/
   - Práctica: 02_practicas.md
   - Herramientas: 03_herramientas.md
   - Guías:
