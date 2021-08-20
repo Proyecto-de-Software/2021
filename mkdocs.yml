@@ -1,6 +1,8 @@
 site_name: Proyecto de Software 2021
 theme:
   name: 'material'
+  logo: images/logo.png
+  favicon: images/favicon.ico
   features:
     - navigation.tabs
     - navigation.tabs.sticy
