@@ -4,6 +4,16 @@ theme:
   features:
     - navigation.tabs
     - navigation.tabs.sticy
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/lightbulb
+        name: Switch to light mode
+
 nav:
   - Inicio: index.md
   - Teorías: 
