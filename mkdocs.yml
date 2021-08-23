@@ -28,6 +28,8 @@ nav:
   - Teorías: 
     - Listado: 01_teorias.md
     - Presentacion: 01_teorias/clase0/
+    - Git / Gitlab: 01_teorias/clase1_1/
+    - Git cont.: 01_teorias/clase1_2/
   - Práctica: 02_practicas.md
   - Explicaciones: 03_explicaciones.md
   - Herramientas: 04_herramientas.md
