@@ -6,9 +6,9 @@ Información de la infraestructura del servidor de la asignatura Proyecto de Sof
 ![infraestructura](images/infraestructura.png)
 
 ## Versiones a utilizar
-* Lenguaje: <strong>Python 3</strong>.
-* Servidor Web: <strong>Apache 2.4</strong>.
-* Servidor de Base de Datos: <strong>MariaDB</strong>.
+* Lenguaje: <strong>Python 3.8.10</strong>.
+* Servidor Web: <strong>Apache 2.4.41</strong>.
+* Servidor de Base de Datos: <strong>MariaDB 10.3.31</strong>.
 
 ## Código interpretado
 
