@@ -30,7 +30,9 @@ nav:
     - Presentación: 01_teorias/clase0/
     - Git / Gitlab: 01_teorias/clase1_1/
     - Git cont.: 01_teorias/clase1_2/
-    - Conceptos básicos: 01_teorias/clase2_1/
+    - Conceptos básicos - parte I: 01_teorias/clase2_1/
+    - Conceptos básicos - parte II: 01_teorias/clase2_2/
+    - Introducción a Python: 01_teorias/clase3_1/
   - Práctica: 02_practicas.md
   - Explicaciones: 03_explicaciones.md
   - Herramientas: 04_herramientas.md
