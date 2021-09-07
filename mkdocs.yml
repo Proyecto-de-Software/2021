@@ -32,7 +32,9 @@ nav:
     - Git cont.: 01_teorias/clase1_2/
     - Conceptos básicos - parte I: 01_teorias/clase2_1/
     - Conceptos básicos - parte II: 01_teorias/clase2_2/
+    - Entornos virtuales: 01_teorias/clase3_2/
     - Introducción a Python: 01_teorias/clase3_1/
+    - Python(cont.): 01_teorias/clase3_3/
   - Práctica: 02_practicas.md
   - Explicaciones: 03_explicaciones.md
   - Herramientas: 04_herramientas.md
