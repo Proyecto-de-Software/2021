@@ -5,8 +5,8 @@
 * [Conceptos básicos - parte I](clase2_1) - Aspectos básicos [:material-youtube:](https://youtu.be/kZiTbrFHEwI) - HTML [:material-youtube:](https://youtu.be/EUm-HjlsUqk)- CSS [:material-youtube:](https://youtu.be/tb4VVTJym6s)
 	* [Conceptos básicos - parte II](clase2_2) [:material-file-pdf:](clase2_2.pdf) 
 * [Entornos virtuales](clase3_2) [:material-file-pdf:](clase3_2.pdf) [:material-youtube:](https://youtu.be/uBgh_8esLIw) 
-* [Introducción a Python](clase3_1) [:material-file-pdf:](clase3_1.pdf) [:material-youtube:](https://youtu.be/T_V0ncHIqWU) 
- 	* [Python: POO, excepciones y archivos](clase3_3) [:material-file-pdf:](clase3_3.pdf)
+* [Introducción a Python](clase3_1) [:material-file-pdf:](clase3_1.pdf) [:material-youtube:](https://youtu.be/T_V0ncHIqWU) [:material-language-python:](clase3_1/clase3_1.ipynb)
+ 	* [Python: POO, excepciones y archivos](clase3_3) [:material-file-pdf:](clase3_3.pdf)[:material-language-python:](clase3_3/clase3_3.ipynb)
 	* Sugerencias de tipos en Python.
 	* Una introducción al testing en Python.
 
