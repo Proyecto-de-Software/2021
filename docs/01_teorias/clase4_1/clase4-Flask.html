@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>Proyecto 2021</title>
+    <link rel="shortcut icon" href="./favicon.ico"/>
+    <link rel="stylesheet" href="./dist/reveal.css" />
+    <link rel="stylesheet" href="./dist/theme/league.css" id="theme" />
+    <link rel="stylesheet" href="./css/highlight/zenburn.css" />
+    <link rel="stylesheet" href="./_assets/proyecto.css" />
+
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template">
+# Proyecto de Software
+
+
+## Cursada 2021
+</script></section><section  data-markdown><script type="text/template">
+# Temario
+
+- Repaso Python.
+- Flask
+- MVC
+
+</script></section><section ><section data-markdown><script type="text/template">
+# Repaso Python</script></section><section data-markdown><script type="text/template">
+# Repasando
+
+- ¿Por qué usamos y promovemos el uso de software libre? <!-- .element: class="fragment" data-fragment-index="1" -->
+- ¿Características de Python? <!-- .element: class="fragment" data-fragment-index="2" -->
+- ¿Desarrollo en el servidor? <!-- .element: class="fragment" data-fragment-index="3" -->
+</script></section><section data-markdown><script type="text/template">
+# Programación en el servidor
+
+![Backend developer-roadmap 2018](images/backendPython.png)
+</script></section><section data-markdown><script type="text/template">
+# Nosotros usaremos Python
+
+## ¿Por qué?
+
+- https://www.tiobe.com/tiobe-index/
+- https://insights.stackoverflow.com/trends?tags=python
+- https://githut.info/
+- https://madnight.github.io/githut/#/pull_requests/2021/2
+</script></section><section data-markdown><script type="text/template">
+# Python
+
+- Fue desarrollado por [Guido Van Rossum](https://twitter.com/gvanrossum) a finales de los años 80.
+- El nombre proviene del grupo de cómicos ingleses [Monty Python](https://es.wikipedia.org/wiki/Monty_Python).
+
+- Sitio Oficial: https://python.org/
+- Python Argentina: https://python.org.ar/
+</script></section><section data-markdown><script type="text/template">
+# Características generales
+
+- Es un lenguaje de alto nivel, fácil de aprender. Muy expresivo y legible.
+- Es interpretado.
+- Multiplataforma y multiparadigma.
+- Posee una sintáxis elegante y tipado dinámico y fuerte. 
+- Tiene un manejo eficiente de estructuras de datos de alto nivel. 
+</script></section><section data-markdown><script type="text/template">
+# Sintaxis básica
+
+- **NO** hay declaración de variables: las variables se crean **dinámicamente** cuando se les asigna un valor.
+- Tiene **tipado dinámico**: las variables pueden cambiar de tipo a lo largo del programa.
+- Bloques, identación.
+
+</script></section></section><section ><section data-markdown><script type="text/template">
+# Framework
+
+- Esquema de trabajo que nos permite:
+- Evitar la escritura de código de manera repetitiva <!-- .element: class="fragment" data-fragment-index="1" -->
+- Buenas prácticas <!-- .element: class="fragment" data-fragment-index="2" -->
+- Estructura del código relativamente homogeneo. <!-- .element: class="fragment" data-fragment-index="3" -->
+
+</script></section><section data-markdown><script type="text/template">
+# Flask
+
+- Instalamos un nuevo paquete al entorno, Flask.
+
+![El documento como un árbol](images/virtualEnv3.png)
+
+</script></section><section data-markdown><script type="text/template">
+# Flask
+
+- Hola Mundo
+
+```python
+
+from flask import Flask
+app = Flask(__name__)
+
+@app.route('/')
+def hello_world():
+    return 'Hello, World!'
+
+```
+</script></section><section data-markdown><script type="text/template">
+# Flask
+
+
+- Miramos nuestro código en el browser:
+
+```bash
+
+export FLASK_APP=index.py
+flask run
+
+```
+
+![Levantamos el servidor](images/flask1.png)
+
+</script></section><section data-markdown><script type="text/template">
+# Flask
+
+- Modificamos nuestro código:
+
+```python
+
+from flask import Flask
+app = Flask(__name__)
+
+@app.route('/')
+def hello_world():
+    mensaje = 'Hello, World!'
+    return mensaje + 2
+```
+
+![Tenemos un error](images/flask3.png)
+
+</script></section><section data-markdown><script type="text/template">
+# Flask
+
+- Activamos el entorno de desarrollo:
+
+```bash
+
+export FLASK_ENV=development
+
+```
+
+![Levantamos el servidor](images/flask2.png)
+
+</script></section><section data-markdown><script type="text/template">
+# Flask
+
+- Ahora podemos ver un poco más:
+
+
+![Levantamos el servidor](images/flask4.png)
+
+</script></section><section data-markdown><script type="text/template">
+# Flask
+
+- Vamos recibir argumentos
+
+```python
+
+from flask import Flask
+
+app = Flask(__name__) 
+
+
+@app.route("/")
+def index():
+    return "Hola mundo"
+
+@app.route("/personas")
+def personas():
+    return "personas"
+
+@app.route("/personas/<string:nombre>")
+def persona(nombre):
+    nombre = nombre.capitalize()
+    return f"Hola {nombre}"
+
+```
+</script></section><section data-markdown><script type="text/template">
+# Flask
+
+- Armamos un html:
+
+```python
+from flask import Flask
+app = Flask(__name__)
+
+@app.route('/')
+def hola_mundo():
+    mensaje = '<!DOCTYPE html>'
+    mensaje +=  '<html lang="es"> '
+    mensaje +=  '<head>'
+    mensaje += '</head>'
+    mensaje += '<body>'
+    mensaje += 'Hola mundo!'
+    mensaje += '</body>'
+    mensaje += '</html>'
+    return mensaje
+
+```
+
+</script></section><section data-markdown><script type="text/template">
+# Flask
+
+- y otro...:
+
+```python
+from flask import Flask
+app = Flask(__name__)
+
+
+@app.route("/personas")
+def personas():
+    mensaje = '<!DOCTYPE html>'
+    mensaje +=  '<html lang="es"> '
+    mensaje +=  '<head>'
+    mensaje += '</head>'
+    mensaje += '<body>'
+    mensaje += 'Hola personas!'
+    mensaje += '</body>'
+    mensaje += '</html>'
+    return mensaje
+
+```
+</script></section><section data-markdown><script type="text/template">
+# Flask
+
+- y otro...:
+
+```python
+from flask import Flask
+app = Flask(__name__)
+
+
+@app.route("/personas/<string:nombre>")
+def persona(nombre):
+    nombre = nombre.capitalize()
+    mensaje = '<!DOCTYPE html>'
+    mensaje +=  '<html lang="es"> '
+    mensaje +=  '<head>'
+    mensaje += '</head>'
+    mensaje += '<body>'
+    mensaje += f"Hola {nombre}"
+    mensaje += '</body>'
+    mensaje += '</html>'
+    return mensaje
+
+```
+</script></section><section data-markdown><script type="text/template">
+# Flask
+
+## ¿Problemas? ¿Inconvenientes?
+
+</script></section><section data-markdown><script type="text/template">
+# Flask
+
+- Una solución
+
+```python
+from flask import Flask, render_template
+
+app = Flask(__name__) 
+
+@app.route("/")
+def hola_mundo():
+    return render_template ("index.html")
+
+
+```
+</script></section><section data-markdown><script type="text/template">
+# Flask
+
+- index.html
+
+```html
+<!DOCTYPE html>
+<html lang="es"> 
+    <head>
+        <title>Ejemplo Proyecto</title>
+    </head>
+    <body>
+        <h1>Hola mundo!<h1>
+    </body>
+</html>
+```
+</script></section><section data-markdown><script type="text/template">
+# Flask
+
+- Con variables
+
+```python
+
+@app.route("/personas")
+def personas():
+    contenido = "Hola personas!"
+    return render_template("index1.html", contenido=contenido)
+
+@app.route("/personas/<string:nombre>")
+def persona(nombre):
+    nombre = nombre.capitalize()
+    contenido = f"Hola {nombre}"
+    return render_template("index1.html", contenido=contenido)
+
+
+```
+
+</script></section><section data-markdown><script type="text/template">
+# Flask
+
+- index.html
+
+```html
+<!DOCTYPE html>
+<html lang="es"> 
+    <head>
+        <title>Ejemplo Proyecto</title>
+    </head>
+    <body>
+        <h1>{{contenido}}<h1>
+    </body>
+</html>
+```
+</script></section><section data-markdown><script type="text/template">
+# Flask
+
+- Condicionales
+
+```python
+
+@app.route("/")
+def hola_mundo():
+    return render_template ("index.html", contenido="mundo")
+
+
+@app.route("/personas")
+def personas():
+    contenido = "personas!"
+    return render_template("index.html", contenido=contenido)
+
+@app.route("/personas/<string:nombre>")
+def persona(nombre):
+    nombre = nombre.capitalize()
+    return render_template("index.html", contenido=nombre)
+
+
+```
+
+</script></section><section data-markdown><script type="text/template">
+# Flask
+
+- index.html
+
+```html
+<!DOCTYPE html>
+<html lang="es"> 
+    <head>
+        <title>Ejemplo Proyecto</title>
+    </head>
+    <body>
+            {% if contenido == "River" %}
+                <h1>El campeón es {{contenido}}<h1>
+            {% else %}
+                <h1>Hola {{contenido}}<h1>
+            {% endif %}
+    </body>
+</html>
+```
+
+</script></section><section data-markdown><script type="text/template">
+# Flask
+
+- Iteraciones
+
+```python
+from flask import Flask, render_template
+
+app = Flask(__name__) 
+
+
+pos_equipos = {"River" : "Campeón", 
+               "Boca": "Sub Campeón",
+               "Gremio": "Semi finalista",
+               "Palmeiras": "Semi finalista"}
+
+@app.route("/equipos")
+def personas():
+    return render_template("index.html", contenido=pos_equipos)
+
+
+```
+
+</script></section><section data-markdown><script type="text/template">
+# Flask
+
+- index.html
+
+```html
+<!DOCTYPE html>
+<html lang="es"> 
+    <head>
+        <title>Ejemplo Proyecto</title>
+    </head>
+    <body>
+            <ul>
+               {% for equipo in contenido %}
+                    <li>{{equipo}}</li>
+               {% endfor %}
+            </ul>
+    </body>
+</html>
+```
+</script></section><section data-markdown><script type="text/template">
+# Flask
+
+- Url
+
+```python
+app = Flask(__name__) 
+
+
+pos_equipos = {"River" : "Campeón", 
+               "Boca": "Sub Campeón",
+               "Gremio": "Semi finalista",
+               "Palmeiras": "Semi finalista"}
+
+@app.route("/")
+def index():
+    return render_template ("index.html", contenido="mundo")
+
+
+@app.route("/equipos")
+def equipos():
+    return render_template("equipos.html", contenido=pos_equipos)
+
+```
+
+</script></section><section data-markdown><script type="text/template">
+# Flask
+
+- index.html
+
+```html
+<!DOCTYPE html>
+<html lang="es"> 
+    <head>
+        <title>Ejemplo Proyecto</title>
+    </head>
+    <body>
+       <h1> Libertadores 2018 </h1>
+       <a href="{{url_for('equipos')}}"> Equipos </a>
+    </body>
+</html>
+```
+
+</script></section><section data-markdown><script type="text/template">
+# Flask
+
+- equipos.html
+
+```html
+<!DOCTYPE html>
+<html lang="es"> 
+    <head>
+        <title>Ejemplo Proyecto</title>
+    </head>
+    <body>
+            <ul>
+               {% for equipo in contenido %}
+                    <li>{{equipo}}</li>
+               {% endfor %}
+            </ul>
+            <a href="{{url_for('index')}}"> Volver al inicio </a>
+    </body>
+</html>
+```
+
+</script></section><section data-markdown><script type="text/template">
+# Flask
+
+- Herencia
+- layout.html
+
+```html
+<!DOCTYPE html>
+<html lang="es"> 
+    <head>
+        <title>Ejemplo Proyecto</title>
+    </head>
+    <body>
+       <h1> {% block heading %} {% endblock %}</h1>
+       {% block contenido %}
+       {% endblock %}
+    </body>
+</html>
+```
+</script></section><section data-markdown><script type="text/template">
+# Flask
+
+- Herencia
+- index.html
+
+```html
+{% extends "layout.html"%}
+{% block heading%}
+    <h1> Libertadores 2018 </h1>
+{% endblock %}
+{% block contenido %}
+    <a href="{{url_for('equipos')}}"> Equipos </a>
+{% endblock %}
+```</script></section><section data-markdown><script type="text/template">
+# Flask
+
+- Herencia
+- equipos.html
+
+```html
+{% extends "layout.html"%}
+{% block heading%}
+    <h1> Posiciones 2018 </h1>
+{% endblock %}
+{% block contenido %}
+        <ul>
+        {% for equipo in contenido %}
+            <li>{{equipo}}</li>
+        {% endfor %}
+        </ul>
+        <a href="{{url_for('index')}}"> Volver al inicio </a>
+{% endblock %}
+
+```
+</script></section><section data-markdown><script type="text/template">
+# Flask
+
+- Formularios
+
+```python
+from flask import Flask, render_template, request
+
+app = Flask(__name__) 
+
+
+pos_equipos = {"River" : "Campeón", 
+               "Boca": "Sub Campeón",
+               "Gremio": "Semi finalista",
+               "Palmeiras": "Semi finalista"}
+
+@app.route("/equipos")
+def equipos():
+    return render_template("equipos.html", contenido=pos_equipos)
+
+@app.route("/agregar", methods=["POST"])
+def agregar():
+    equipo = request.form.get("equipo")
+    posicion = request.form.get("posicion")
+    pos_equipos[equipo] = posicion
+    return render_template("equipos.html", contenido=pos_equipos)
+
+
+```
+</script></section><section data-markdown><script type="text/template">
+# Flask
+
+- Formularios
+- equipos.html
+
+```html
+{% extends "layout.html"%}
+{% block heading%}
+    <h1> Posiciones 2018 </h1>
+{% endblock %}
+{% block contenido %}
+        <ul>
+        {% for equipo in contenido %}
+            <li>{{equipo}}</li>
+        {% endfor %}
+        </ul>
+        <form action="{{ url_for('agregar')}}" method="post">
+        <input type="text" name="equipo" placeholder="Ingrese un equipo"> 
+        <input type="text" name="posicion" placeholder="Ingrese la posicion">
+        <button>Enviar</button>
+        </form>
+        <a href="{{url_for('index')}}"> Volver al inicio </a>
+{% endblock %}
+
+```
+</script></section></section><section  data-markdown><script type="text/template">
+
+# Ejemplos
+
+```url
+
+https://proyecto-de-software.github.io/2021/01_teorias/clase4_ejemplos.zip
+
+```
+</script></section><section ><section data-markdown><script type="text/template">
+
+# Patrón MVC
+</script></section><section data-markdown><script type="text/template">
+# Model – View - Controller
+
+
+* Tres componentes:
+	* Modelo
+	* Vista
+	* Controlador
+
+* El principio más importante de la arquitectura MVC es la **separación del código del programa en tres capas**, dependiendo de su naturaleza. 
+* La lógica relacionada con los datos se incluye en el modelo, el código de la presentación en la vista y la lógica de la aplicación en el controlador. 
+</script></section><section data-markdown><script type="text/template">
+# MVC
+![MVC](images/mvc1.png)
+* Reduce la complejidad, facilita la reutilización y acelera el proceso de comunicación entre capas.</script></section><section data-markdown><script type="text/template">
+
+# Aplicación Típica SIN MVC
+
+* Aplicación típica que no sigue MVC tiene todo el código en el mismo lugar.
+
+```python
+#encoding: utf-8
+import pymysql
+
+from flask import Flask, g
+
+
+
+app = Flask(__name__)
+
+@app.route('/')
+def hello_world():
+    #CREATE USER 'proyecto'@'localhost' IDENTIFIED BY 'password1';
+    #GRANT ALL PRIVILEGES ON *.* TO 'proyecto'@'localhost';
+    SECRET_KEY = "dev"
+    DEBUG = True
+    DB_HOST = 'localhost'
+    DB_USER = 'proyecto'
+    DB_PASS = 'password1'
+    DB_NAME = 'proyecto'
+    #Creamos la conexión
+    g.db = pymysql.connect(
+            host=DB_HOST,
+            user=DB_USER,
+            password=DB_PASS,
+            db=DB_NAME,
+            cursorclass=pymysql.cursors.DictCursor
+            )
+
+    mensaje = '<!DOCTYPE html>'
+    mensaje +=  '<html lang="en"> '
+    mensaje +=  '<head>'
+    mensaje += '</head>'
+    mensaje += '<body>'
+
+    sql = "SELECT * FROM issues"
+
+    cursor = g.db.cursor()
+    cursor.execute(sql)
+    issues = cursor.fetchall()
+    mensaje += '<table>'
+    
+    mensaje += '<tr>'
+    for field in issues[0].keys():
+        mensaje += '<th>'
+        mensaje += field
+        mensaje += '</th>'
+    mensaje += '</tr>'
+    
+    for issue in issues:
+        mensaje += '<tr>'
+        for field in issue.values():
+            mensaje += '<td>'        
+            mensaje += str(field)
+            mensaje += '</td>'  
+        mensaje += '</tr>'
+    mensaje += '</table>' 
+    mensaje += '</body>'
+    mensaje += '</html>'
+
+    #Cerramos conexión a la BBDD
+    db = g.pop('db', None)
+    if db is not None:
+        db.close()
+
+    return mensaje 
+```
+
+</script></section><section data-markdown><script type="text/template">
+# MVC - Configuración
+
+app_template/config.py
+
+```python
+from os import environ
+
+class BaseConfig(object):
+    """Base configuration."""
+
+    DEBUG = None
+    DB_HOST = "bd_name"
+    DB_USER = "db_user"
+    DB_PASS = "db_pass"
+    DB_NAME = "db_name"
+    SECRET_KEY = "secret"
+
+    @staticmethod
+    def configure(app):
+        # Implement this method to do further configuration on your app.
+        pass
+
+
+class DevelopmentConfig(BaseConfig):
+    """Development configuration."""
+
+    ENV = "development"
+    DEBUG = environ.get("DEBUG", True)
+    DB_HOST = environ.get("DB_HOST", "localhost")
+    DB_USER = environ.get("DB_USER", "MY_DB_USER")
+    DB_PASS = environ.get("DB_PASS", "MY_DB_PASS")
+    DB_NAME = environ.get("DB_NAME", "MY_DB_NAME")
+
+```
+</script></section><section data-markdown><script type="text/template">
+# MVC – Separando el modelo
+
+app_template/app/db.py
+
+```python
+import pymysql
+
+from flask import current_app
+from flask import g
+from flask import cli
+
+
+def connection():
+    if "db_conn" not in g:
+        conf = current_app.config
+        g.db_conn = pymysql.connect(
+            host=conf["DB_HOST"],
+            user=conf["DB_USER"],
+            password=conf["DB_PASS"],
+            db=conf["DB_NAME"],
+            cursorclass=pymysql.cursors.DictCursor,
+        )
+
+    return g.db_conn
+
+
+def close(e=None):
+    conn = g.pop("db_conn", None)
+
+    if conn is not None:
+        conn.close()
+
+
+def init_app(app):
+    app.teardown_appcontext(close)
+  
+
+```</script></section><section data-markdown><script type="text/template">
+# MVC – Separando el modelo
+
+app_template/app/models/issue.py
+
+```python
+class Issue(object):
+    @classmethod
+    def all(cls, conn):
+        sql = "SELECT * FROM issues"
+
+        cursor = conn.cursor()
+        cursor.execute(sql)
+
+        return cursor.fetchall()
+
+    @classmethod
+    def create(cls, conn, data):
+        sql = """
+            INSERT INTO issues (email, description, category_id, status_id)
+            VALUES (%s, %s, %s, %s)
+        """
+
+        cursor = conn.cursor()
+        cursor.execute(sql, list(data.values()))
+        conn.commit()
+
+        return True
+
+```
+</script></section><section data-markdown><script type="text/template">
+# MVC - El controlador
+
+app_template/app/resources/issue.py
+
+```python
+from flask import redirect, render_template, request, url_for
+from app.db import connection
+from app.models.issue import Issue
+
+# Public resources
+def index():
+    conn = connection()
+    issues = Issue.all(conn)
+
+    return render_template("issue/index.html", issues=issues)
+
+
+def new():
+    return render_template("issue/new.html")
+
+
+def create():
+    conn = connection()
+    Issue.create(conn, request.form)
+
+    return redirect(url_for("issue_index"))
+
+```
+
+</script></section><section data-markdown><script type="text/template"># MVC – Separando la Vista
+
+app_template/app/templates/layout.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+    <title>{% block title %}{% endblock %}</title>
+    {% endblock %}
+  </head>
+  <body>
+    <div id="navbar">
+      {% block navbar %}
+      {% endblock %}
+    </div>
+    <div id="content">
+      {% with messages = get_flashed_messages() %}
+        {% if messages %}
+          <ul class=flashes>
+          {% for message in messages %}
+            <li>{{ message }}</li>
+          {% endfor %}
+          </ul>
+        {% endif %}
+      {% endwith %}
+
+      {% block content %}
+      {% endblock %}
+    </div>
+    <div id="footer">
+      {% block footer %}
+      {% endblock %}
+    </div>
+  </body>
+</html>
+
+```</script></section><section data-markdown><script type="text/template"># MVC – Separando la Vista - Vista
+
+app_template/app/templates/issue/index.html
+
+```html
+{% extends "layout.html" %}
+{% block title %}Consultas{% endblock %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block content %}
+  <h1>Consultas</h1>
+  {% for issue in issues %}
+    <li>{{ issue.email }} - {{ issue.description }} - {{ issue.category_id }} - {{ issue.status_id }}</li>
+  {% endfor %}
+  <a href="{{ url_for('home') }}" class="link">Volver</a>
+  <a href="{{ url_for('issue_new') }}" class="link">Nuevo</a>
+{% endblock %}
+   
+```
+</script></section><section data-markdown><script type="text/template">
+# MVC - Separando la Vista - Templates
+
+- ¿Qué es?
+- Lo vemos más adelante.
+</script></section><section data-markdown><script type="text/template">
+# Variaciones del MVC original
+
+* MTV en Django - Particularidades
+* Model <!-- .element: class="fragment" data-fragment-index="1" -->
+* Template <!-- .element: class="fragment" data-fragment-index="2" -->
+* View <!-- .element: class="fragment" data-fragment-index="3" -->
+</script></section><section data-markdown><script type="text/template">
+# Buenas Prácticas MVC
+
+La idea central detrás de MVC es la **reutilización de código** y la **separación de intereses**.
+</script></section><section data-markdown><script type="text/template">
+# Buenas Prácticas MVC - Modelo
+
+
+* Puede contener:
+	* La lógica necesaria para asegurar que los datos cumplen los requerimientos (validaciones).
+	* Código de manipulación de datos.
+* NO puede contener:
+	* En general, nada que se relacione con el usuario final directamente.
+	* Se debe evitar HTML embebido o cualquier código de presentación. 
+</script></section><section data-markdown><script type="text/template">
+# Buenas Prácticas MVC - Vista
+
+
+* Puede contener:
+	* Código de presentación, formatear y dibujar los datos. 
+* NO puede contener:
+	* Código que realice consultas a la BD.
+</script></section><section data-markdown><script type="text/template">
+# Buenas Prácticas MVC  - Controlador
+
+
+* Puede contener:
+	* Creación de instancias del Modelo para pasarle los datos necesarios. 
+* NO puede contener:
+	* Código que realice consultas a la BD (SQL embebido).
+	* Se debe evitar HTML embebido o cualquier código de presentación. 
+</script></section><section data-markdown><script type="text/template">
+# Para seguir viendo:
+
+* Lenguaje SQL -> http://www.w3schools.com/sql/default.asp
+* MVC -> http://es.wikipedia.org/wiki/Modelo_Vista_Controlador#Frameworks_MVC
+
+</script></section></section><section  data-markdown><script type="text/template">
+
+# Seguimos en la próxima ...
+
+```url
+
+https://flask.palletsprojects.com/en/2.0.x/quickstart/
+
+```
+
+
+
+
+
+
+</script></section></div>
+    </div>
+
+    <script src="./dist/reveal.js"></script>
+
+    <script src="./plugin/markdown/markdown.js"></script>
+    <script src="./plugin/highlight/highlight.js"></script>
+    <script src="./plugin/zoom/zoom.js"></script>
+    <script src="./plugin/notes/notes.js"></script>
+    <script src="./plugin/math/math.js"></script>
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealZoom,
+          RevealNotes,
+          RevealMath
+        ]
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal().getQueryHash() || {};
+
+      var options = extend(defaultOptions, {}, queryOptions);
+    </script>
+
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>
