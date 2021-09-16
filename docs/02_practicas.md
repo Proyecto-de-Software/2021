@@ -6,6 +6,7 @@
 
 ## Actividades
 - [Actividad 1 - Mockups y Requerimientos](https://catedras.linti.unlp.edu.ar/mod/assign/view.php?id=31842)
+- [Actividad 2 - Conceptos Generales de Git](https://catedras.linti.unlp.edu.ar/mod/assign/view.php?id=32134)
 
 
 
