@@ -51,7 +51,7 @@ virtualenv -p python venv
 
 !!! warning
     Recuerden tener en cuenta tener configurada la versión de Python con la que
-    quieren arrancar el proyecto. En nuestro caso la versión `3.6.8`
+    quieren arrancar el proyecto. En nuestro caso la versión `3.8.10`
 
     Se pueden asegurar ejecutando:
 
@@ -66,7 +66,7 @@ creado.
 Para activar el entorno ejecutamos
 
 ```bash
-. venv/bin/activate
+source venv/bin/activate
 ```
 
 Ahora si localizamos donde está el ejecutable de **Python** que utilizamos
