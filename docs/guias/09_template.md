@@ -1,6 +1,7 @@
 # Aplicación Base
 
-En la siguiente guía se va a explicar sobre la aplicación base brindada por la
+En la siguiente guía se va a explicar sobre la [aplicación base
+brindada](https://github.com/Proyecto-de-Software/flask-template) por la
 cátedra.
 
 ## Versiones en el Server
