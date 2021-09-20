@@ -68,11 +68,18 @@ tree -L 2
 ├── requirements.txt
 └── run.py
 ```
-### Models
 
-Aquí se encuentra el código referido a la lógica de aplicación concreta. En
-general son lo modelos que interactúan con la base de datos y realizan lógica de
-negocio.
+### Archivo `__init__.py`
+
+Este es el archivo principal de la aplicación que la inicializa y la configura.
+En las misma se encuentra una función llamada `create_app` que realiza toda
+la configuración:
+
+- Crea la aplicación `flask`.
+- Levanta la configuración desde el módulo `config.py` según el `environment`.
+- Configura las sesiones, la base de datos y el motor de templates.
+- Configura todas las rutas de la aplicación.
+- Se registran los manejadores en caso de error.
 
 ### Resources
 
@@ -80,6 +87,12 @@ Este directorio tiene los controladores de la aplicación. Los controladores tie
 lógica de la aplicación relacionada con la web. Hace de enlace entre la lógica
 de aplicación y la de generación de las vistas. En el subdirectorio `/api` se
 encuentran los controladores que devuelven los recursos en formato `json`.
+
+### Models
+
+Aquí se encuentra el código referido a la lógica de aplicación concreta. En
+general son lo modelos que interactúan con la base de datos y realizan lógica de
+negocio.
 
 ### Templates
 
@@ -102,18 +115,6 @@ de sesión.
 Aquí se colocan los archivos estáticos y que queremos que puedan ser accedidos
 públicamente en nuestra aplicación, como pueden ser hojas de estilo, scripts js
 e imágenes.
-
-### Archivo `__init__.py`
-
-Este es el archivo principal de la aplicación que la inicializa y la configura.
-En las misma se encuentra una función llamada `create_app` que realiza toda
-la configuración:
-
-- Crea la aplicación `flask`.
-- Levanta la configuración desde el módulo `config.py` según el `environment`.
-- Configura las sesiones, la base de datos y el motor de templates.
-- Configura todas las rutas de la aplicación.
-- Se registran los manejadores en caso de error.
 
 ## Configuración
 
