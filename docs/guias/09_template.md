@@ -67,17 +67,6 @@ tree -L 2
 ├── requirements.txt
 └── run.py
 ```
-
-### Helpers
-
-Es el directorio que tiene funciones auxiliares de la aplicación. Generalmente
-aquí se encuentra el código que no son parte principal del negocio de la
-aplicación pero que se usan en distintas partes del código.
-
-En este caso se pueden ver funciones para el manejo de los errores dentro del
-archivo `handler.py` y en `auth.py` tenemos una función para la verificación
-de sesión.
-
 ### Models
 
 Aquí se encuentra el código referido a la lógica de aplicación concreta. En
@@ -91,17 +80,27 @@ lógica de la aplicación relacionada con la web. Hace de enlace entre la lógic
 de aplicación y la de generación de las vistas. En el subdirectorio `/api` se
 encuentran los controladores que devuelven los recursos en formato `json`.
 
-### Static
-
-Aquí se colocan los archivos estáticos y que queremos que puedan ser accedidos
-públicamente en nuestra aplicación, como pueden ser hojas de estilo, scripts js
-e imágenes.
-
 ### Templates
 
 Directorio de los archivos de template de Jinja2. En general se suele crear
 un subdirectorio por cada uno de los controladores creados en `resources`.
 Seria como las vistas en el modelo MVC.
+
+### Helpers
+
+Es el directorio que tiene funciones auxiliares de la aplicación. Generalmente
+aquí se encuentra el código que no son parte principal del negocio de la
+aplicación pero que se usan en distintas partes del código.
+
+En este caso se pueden ver funciones para el manejo de los errores dentro del
+archivo `handler.py` y en `auth.py` tenemos una función para la verificación
+de sesión.
+
+### Static
+
+Aquí se colocan los archivos estáticos y que queremos que puedan ser accedidos
+públicamente en nuestra aplicación, como pueden ser hojas de estilo, scripts js
+e imágenes.
 
 ### Archivo `__init__.py`
 
