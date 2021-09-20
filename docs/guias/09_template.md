@@ -5,8 +5,8 @@ cátedra.
 
 ## Versiones en el Server
 
-- Python: 3.6.x
-- Mysql: 10.1.44-MariaDB
+- Python: 3.8.10
+- MariaDB (MySQL): 10.3.31
 
 ## Requsitos
 
@@ -17,15 +17,16 @@ cátedra.
 
 Las dependencias del proyecto se encuentran en el archivo `requirements.txt`:
 
-- Flask v1.0.2       -> web framework
-- PyMysql v0.9.2     -> conexión a la base
-- Flask-Session v0.3 -> sesiones almacenadas en el servidor
+- Flask v2.0.1       -> web framework
+- PyMysql v1.0.2     -> conexión a la base
+- Flask-Session v0.4 -> sesiones almacenadas en el servidor
+- black v21.9b0      -> formateador de código
 
 Cuando vayan agregando nuevas dependencias con el manejador de paquetes de
 python (pip), es necesario que se vayan agregando en archivo para que luego
 sus compañeros/as o en producción puedan instalarse las mismas. Se pueden
 ingresar editando el archivo y guardándolo `'paquete'=='numero de versión'`
-como por ejemplo  `Flask==1.0.2`. Para más ejemplos revisar el archivo
+como por ejemplo  `Flask==2.0.1`. Para más ejemplos revisar el archivo
 `requirements.txt` en la aplicación template.
 
 ## Archivos y directorios importantes
@@ -52,9 +53,9 @@ $ tree -L 1
 tree -L 2
 .
 ├── app
+│   ├── __init__.py  # módulo principal.
 │   ├── db.py        # módulo de conexión con la base de datos.
 │   ├── helpers      # directorio con funciones auxiliares.
-│   ├── __init__.py  # módulo principal.
 │   ├── models       # directorio con los modelos (Models).
 │   ├── resources    # directorio de los controladores (Controllers).
 │   ├── static       # directorio de archivos estáticos.
@@ -153,8 +154,8 @@ siguiente: `FLASK_ENV=development python run.py`
 
 ## ¿Cómo usar el template?
 
-- Descargar del repositorio el último [tag](https://github.com/Proyecto-de-Software/unlp-api-python/archive/1.1.zip)
-  o clonarlo desde el [repositorio](https://github.com/Proyecto-de-Software/unlp-api-python).
+- Descargar del repositorio el último [tag](https://github.com/Proyecto-de-Software/flask-template/tags)
+  o clonarlo desde el [repositorio](https://github.com/Proyecto-de-Software/flask-template).
 - Copiar los archivos de la aplicacion template a dentro del respositorio de su
   proyecto (si tienen visibles los archivos ocultos, no hay que copiar el
   directorio `.git` aunque sí es recomendable copiar el archivo `.gitignore`).
@@ -174,7 +175,7 @@ virtualenv venv
 ```
 - Activar nuestro entorno virtual:
 ```bash
-. venv/bin/activate
+source venv/bin/activate
 ```
 - Instalar los paquetes de nuestra aplicación:
 ```bash
@@ -184,6 +185,11 @@ pip install -r requirements.txt
 ```bash
 FLASK_ENV=development python run.py
 ```
+Alternativa:
+```bash
+FLASK_ENV=development flask run
+```
+
 ```bash
  * Serving Flask app "app" (lazy loading)
  * Environment: development
