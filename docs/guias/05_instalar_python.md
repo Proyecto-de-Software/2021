@@ -1,5 +1,5 @@
-Instalación de Python
-=====================
+# Instalación de Python
+
 
 En esta guía vamos a ver distintas formas de realizar la instalación de
 la versión específica de **Python** que se utilizará en la cátedra para distintos
@@ -30,6 +30,13 @@ la misma versión de **Python**.
 La herramienta que vamos a usar es [`pyenv`](https://github.com/pyenv/pyenv)
 
 ## Linux y MacOS
+
+### Dependencias necesarias
+
+Para que `pyenv` puede realizar la instalación de las distintas versiones de `Python`
+de manera correcta es necesario contar algunas dependencias de su sistema operativo.
+Dependiendo del mismo las instrucciones de instalación pueden encontrarse en el
+siguiente enlace de la documentación de `pyenv` - [Suggested build environment](https://github.com/pyenv/pyenv/wiki#suggested-build-environment).
 
 ### Instalación con Git (Linux y MacOS) RECOMENDADA
 
@@ -71,6 +78,16 @@ Luego reiniciar la terminal para que tome los cambios.
 !!! info
     Guía completa en el [README de pyenv](https://github.com/pyenv/pyenv).
 
+### Instalación con brew (MacOS)
+
+Se puede instalar `pyenv` usando el manejador de paquetes
+[Homebrew](https://brew.sh/) para MacOS.
+
+```bash
+brew update
+brew install pyenv
+```
+
 ### Uso de `pyenv`
 
 Para buscar que versión de **Python** queremos instalar podemos usar:
@@ -89,16 +106,6 @@ o como versión local en el directorio que nos encontremos
 
 ```bash
 pyenv local 3.6.8
-```
-
-### Instalación con brew (MacOS)
-
-Se puede instalar `pyenv` usando el manejador de paquetes
-[Homebrew](https://brew.sh/) para MacOS.
-
-```bash
-brew update
-brew install pyenv
 ```
 
 ## Instalación en Windows
