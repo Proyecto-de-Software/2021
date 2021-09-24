@@ -10,4 +10,5 @@
  	* [Python: POO, excepciones y archivos](clase3_3) [:material-file:](clase3_3.pdf)[:material-language-python:](clase3_3/clase3_3.ipynb)
 	* [Sugerencias de tipos en Python](clase3_4) [:material-file:](clase3_4.pdf)[:material-youtube:](https://youtu.be/vQXYmX-DQEo)[:material-language-python:](clase3_4/clase3_4_type_hints.ipynb)
 	* [Una introducción al testing en Python](clase3_5) [:material-file:](clase3_5.pdf)[:material-youtube:](https://archivos.linti.unlp.edu.ar/index.php/s/rq8p4XvzsCIsAd8)[:material-language-python:](clase3_5/clase3_5_testing.ipynb)
-* [Flask - MVC](clase4_1) [:material-file:](clase4_1.pdf) [:material-file:](clase4_1.zip) - Templates [:material-youtube:](https://youtu.be/TQ0kfhWsWz8)
+* [Flask - MVC](clase4_1) [:material-file:](clase4_1.pdf) [:material-folder-zip:](clase4_1.zip) - Templates [:material-youtube:](https://youtu.be/TQ0kfhWsWz8)
+* [Sesiones](clase5) [:material-file:](clase5.pdf) [:material-folder-zip:](clase5.zip) [:material-youtube:](https://youtu.be/JkErOGTn9yY)
