@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<title>DOM Sencillo</title>
+    <link href="estilos/estilos.css" rel="stylesheet" type="text/css">
+	<script>
+	function agregoListaVacia(){
+		var item;
+		var lista=document.createElement("ul");
+		item=document.createElement("li");
+		lista.appendChild(item);
+		item=document.createElement("li");
+		lista.appendChild(item);
+		document.getElementById("p1").appendChild(lista);	
+	}
+	</script>
+
+</head>
+<body>
+	<img src="imagenes/logoUNLP.png" alt="Logo de la UNLP">
+
+    <h1>Proyecto de Software</h1>
+    <h2> Ejemplos de DOM</h2>
+    <p id="p1">Ahora va  <span> a aparecer </span> una lista </p>
+    <input type="button" value="que aparezca la lista" onclick="agregoListaVacia()">
+
+    
+</body>
+</html>

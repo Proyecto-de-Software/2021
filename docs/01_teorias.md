@@ -13,3 +13,4 @@
 * [Flask - MVC](clase4_1) [:material-file:](clase4_1.pdf) [:material-folder-zip:](clase4_1.zip) - Templates [:material-youtube:](https://youtu.be/TQ0kfhWsWz8)
 * [Sesiones](clase5) [:material-file:](clase5.pdf) [:material-folder-zip:](clase5.zip) [:material-youtube:](https://youtu.be/JkErOGTn9yY)
 * [BBDD - ORM](clase6_1) [:material-file:](clase6_1.pdf) [:material-folder-zip:](clase6_1.zip)
+* [JavaScript y DOM](clase6_2) ParteI (Introducción a JS y DOM)[:material-youtube:](https://youtu.be/c72-gbvxY-Q)- Parte II (objetos en  JavaScript): [:material-youtube:](https://youtu.be/qd8hhh7O8eQ)[:material-folder-zip:](clase6_2.zip)

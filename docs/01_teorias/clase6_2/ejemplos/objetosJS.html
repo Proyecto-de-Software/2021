@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title>Vamos con Pappo</title>
+
+</head>
+
+<body>
+    <h1> Mi primer script en JavaScript</h1>
+    <p> Revisá la consola ....</p>
+    <script>
+    function Musica(titulo, interprete){
+        this.titulo=titulo;
+        this.interprete=interprete;
+        this.es_solo_Pappo = function(){return (this.interprete == "Pappo")};
+    }
+    var mi_musica= new Array();
+    mi_musica[0]= new Musica(
+        "Desconfio",
+        "Pappo");
+    mi_musica[1]= new Musica(
+        "Sussy Cadillac",
+        "Riff");
+    mi_musica[2]= new Musica(
+        "Llegara la paz",
+        "Pappo's Blues");
+
+    for (var i = 0; i<mi_musica.length; i++)
+    { 
+    objeto = mi_musica[i];
+    if (objeto.es_solo_Pappo()){
+      console.log(objeto.titulo)}
+    }
+     </script>
+</body>
+
+</html>

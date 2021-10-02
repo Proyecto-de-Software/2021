@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Mi primer script</title>
+
+</head>
+
+<body>
+    <h1> Mi primer script en JavaScript</h1>
+    <p> Revisá la consola ....</p>
+
+    <script>
+    let bandas = ['AC/DC', 'Led Zeppelin', 'Iron Maden', 'A-ha'];
+    
+    function pasoAMayusculas(bandas){
+     // Retorna una banda entre las bandas pasadas como parámetro.
+     bandas.forEach(element => console.log(element.toUpperCase()));
+    }
+    
+    
+    function bandasConA(bandas){
+        // Retorna los nombres de las bandas en mayúsculas.
+        for (i = 0; i<=bandas.length-1; i++){
+            if (bandas[i].charAt(0)==="A"){
+                console.log(bandas[i].toUpperCase());
+            }
+        }
+    }
+    function bandasConA_v2(bandas){
+        // Retorna los nombres de las bandas en mayúsculas.
+        for ( var banda of bandas) {
+            if (banda.charAt(0)==="A"){
+                console.log(banda.toUpperCase());
+            }
+        }
+    }
+    
+    
+    function unaBanda(bandas){
+        let valInicial = 0;
+        let valFinal = bandas.length;
+        return bandas[Math.floor(Math.random() * (valFinal - valInicial))];
+    }
+    
+    //pasoAMayusculas(bandas);
+    bandasConA_v2(bandas);
+    //console.log("Una banda cualaquiera: " + unaBanda(bandas));
+
+    </script>
+</body>
+
+</html>

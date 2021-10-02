@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title>Vamos con Pappo</title>
+
+</head>
+
+<body>
+    <script>
+        class Musica{
+            constructor (titulo, interprete){
+            this.titulo = titulo;
+            this.interprete = interprete;
+            this.language = ""
+            }
+            get es_solo_Pappo () {
+                return this.interprete == "Pappo";
+            }
+            get resumen () {
+                return this.titulo + ":" + this.interprete +"("+this.language+")";
+            }
+            set idioma (idioma) {
+                this.language = idioma;
+            }
+        }
+
+        var objeto = new Musica("El Hombre Suburbano", "Pappo's Blues");
+        console.log(objeto.resumen);
+        objeto.idioma = "Español";
+        console.log(objeto.resumen);
+     </script>
+</body>
+
+</html>

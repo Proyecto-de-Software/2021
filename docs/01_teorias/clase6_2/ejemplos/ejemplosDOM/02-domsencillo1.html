@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<title>DOM Sencillo</title>
+    <link href="estilos/estilos.css" rel="stylesheet" type="text/css">
+
+	<script>
+	function agregoLista(){
+		var item;
+		var lista=document.createElement("ul");
+		item=document.createElement("li");
+		item.appendChild(document.createTextNode("Uno"));
+		lista.appendChild(item);
+		item=document.createElement("li");
+		item.appendChild(document.createTextNode("Dos"));
+		lista.appendChild(item);
+		document.getElementById("p1").appendChild(lista);		
+	}
+
+	function modificoParrafo(){
+		document.getElementById("p2").firstChild.nodeValue="Ya te cambie!!!!!!! :) ";
+	}
+	</script>
+
+</head>
+<body>
+	<img src="imagenes/logoUNLP.png" alt="Logo de la UNLP">
+
+    <h1>Proyecto de Software</h1>
+    
+	<p id="p1">Ahora va  a aparecer una lista con elementos </p>
+	<input type="button" value="que aparezca la lista" onclick="agregoLista()">
+	<p id="p2"> Ahora vamos a cambiar los items generados </p>
+	<input type="button" value="Cambiamos el segundo párrafo" onclick="modificoParrafo()">
+    
+</body>
+</html>
+

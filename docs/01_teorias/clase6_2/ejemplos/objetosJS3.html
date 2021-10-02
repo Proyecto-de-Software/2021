@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title>Vamos con Pappo</title>
+
+</head>
+
+<body>
+    <h1> Mi primer script en JavaScript</h1>
+    <p> Revisá la consola ....</p>
+    <script>
+   
+   class Jugador {
+       constructor(nombre, juego){
+          this.nom = nombre;
+          this.juego = juego;
+       }
+       get nombre() {
+            return this.nom;
+        }
+    }
+    class JugadorDeFIFA extends Jugador {
+        constructor(nombre, plataforma){
+            super(nombre, 'FIFA');
+            this.dispositivo = plataforma;
+        }
+        get plataforma(){
+            return this.dispositivo;
+        }
+    }
+    var nico =  new JugadorDeFIFA('Nico Villalba', 'PS4');
+    console.log(nico.plataforma);
+    console.log(nico.nombre);
+
+     </script>
+</body>
+
+</html>
