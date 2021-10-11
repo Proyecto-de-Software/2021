@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-    <title>AJAX - Fetch</title>
+    <title>SQLi/XSS + AJAX - Fetch - Async/Await + CORS</title>
     <link rel="shortcut icon" href="./favicon.ico"/>
     <link rel="stylesheet" href="./dist/reveal.css" />
     <link rel="stylesheet" href="./dist/theme/league.css" id="theme" />
@@ -19,8 +19,9 @@
 ## Cursada 2021
 </script></section><section  data-markdown><script type="text/template"># Temario
 - Problemas de seguridad: SQLi/XSS
-- AJAX, Fetch API, Async/Await
+- Peticiones asincrónicas: AJAX, Fetch API, Async/Await
 - CORS
+</script></section><section  data-markdown><script type="text/template"># Problemas de seguridad
 </script></section><section ><section data-markdown><script type="text/template"># ¿Qué es SQLi?
 </script></section><section data-markdown><script type="text/template">
 # Inyección SQL
@@ -138,9 +139,11 @@ cursor.execute("SELECT first_name FROM users WHERE email = %(mail)s",{'mail': em
 </script></section><section data-markdown><script type="text/template"># Referencias XSS
 - https://owasp.org/www-community/attacks/xss/
 - https://flask.palletsprojects.com/en/2.0.x/security/
-</script></section></section><section  data-markdown><script type="text/template"># Procesamiento en el cliente
+</script></section></section><section  data-markdown><script type="text/template"># Seguimos con procesamiento en el cliente
 
-![Front-end developer-roadmap](images/front-endJS.png)</script></section><section ><section data-markdown><script type="text/template"># AJAX: Asynchronous JAvascript + XML  
+![Front-end developer-roadmap](images/front-endJS.png)
+</script></section><section  data-markdown><script type="text/template"># Peticiones asincrónicas
+</script></section><section ><section data-markdown><script type="text/template"># AJAX: Asynchronous JAvascript + XML  
 </script></section><section data-markdown><script type="text/template">
 # AJAX
 
