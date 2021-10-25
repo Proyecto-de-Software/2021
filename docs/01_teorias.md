@@ -18,3 +18,4 @@
 * [SQLi/XSS + AJAX - Fetch - Async/Await + CORS](clase8) [:material-file:](clase8.pdf) [:material-folder-zip:](clase8.zip)
 * [Microservicios - Frameworks JS - Intro Vue](clase9) [:material-file:](clase9.pdf) [:material-folder-zip:](clase9.zip)
 	* [Directivas Vue](clase9/#/5)[:material-youtube:](https://youtu.be/YUnBBnn2u9k)
+* [Componentes Vue - CLI - Ruteo - Vuex](clase10) [:material-file:](clase10.pdf) [:material-folder-zip:](clase10.zip)
