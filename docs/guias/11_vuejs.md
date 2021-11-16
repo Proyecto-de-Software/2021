@@ -7,7 +7,7 @@ para instalar la herramienta se encuentra en el siguiente [enlace](https://v3.vu
 
 Para esta guía y como recomendación para el trabajo vamos a realizar la instalación de la
 herramienta `vue-cli` que nos permitirá tener armar una configuración inicial para nuestro
-projecto VueJS. La guía de la misma la pueden encontrar [aquí](https://v3.vuejs.org/guide/installation.html#cli)
+proyecto VueJS. La guía de la misma la pueden encontrar [aquí](https://v3.vuejs.org/guide/installation.html#cli)
 
 Siguiendo la guía para instalar la herramienta `vue-cli` hacemos:
 
@@ -24,7 +24,7 @@ O si usamos npm:
 npm install -g @vue/cli
 ```
 
-Una vez terminada la instalción miramos si ya está disponible el comando:
+Una vez terminada la instalación miramos si ya está disponible el comando:
 
 ```sh
 ❯ vue --version
@@ -42,7 +42,7 @@ Para crear un nuevo proyecto debemos utilizar el comando `vue create <nombre>` q
 nos permitirá crear un nuevo proyecto de forma interactiva:
 
 !!! Info
-    Instalar la versión 3 de vuejs y usar el manejador de paquetes que ya tengan instalado en su máquina (yarn o npm)
+    Instalar la versión 3 de VueJS y usar el manejador de paquetes que ya tengan instalado en su máquina (yarn o npm)
 
 ![type:video](img/14_vue_create.mp4)
 
@@ -65,7 +65,7 @@ Con el proyecto creado vamos a intentar levantar el server localmente ejecutando
 Levantado el servidor abrimos la aplicación en el puerto `8080` del navegador.
 
 <figure markdown>
-  ![Server en el Brownser](img/14_vue_local.png)
+  ![Server en el Browser](img/14_vue_local.png)
 </figure>
 
 El directorio de la aplicación nos quedó con los siguientes archivos y directorios:
@@ -75,7 +75,7 @@ El directorio de la aplicación nos quedó con los siguientes archivos y directo
 </figure>
 
 El proyecto ya tiene su propio git ignore donde evita versionar archivos como el `node_modules`.
-Tener en cuenta de agregar los directorios que querramos ignorar más adelante.
+Tener en cuenta de agregar los directorios que queramos ignorar más adelante.
 
 
 ## Subir los cambios al servidor
