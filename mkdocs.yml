@@ -40,7 +40,9 @@ nav:
     - Merge Requests en Gitlab: guias/08_merge_request.md
     - Aplicación Base: guias/09_template.md
     - Guías de Estilo: guias/10_guias_de_estilo.md
+    - VueJS: guias/11_vuejs.md
 markdown_extensions:
+  - md_in_html
   - toc:
       permalink: true
   - admonition
@@ -49,3 +51,5 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+plugins:
+  - mkdocs-video
