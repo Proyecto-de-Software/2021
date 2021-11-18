@@ -19,4 +19,4 @@
 * [Microservicios - Frameworks JS - Intro Vue](clase9) [:material-file:](clase9.pdf) [:material-folder-zip:](clase9.zip)
 	* [Directivas Vue](clase9/#/5)[:material-youtube:](https://youtu.be/YUnBBnn2u9k)
 * [Componentes Vue - CLI - Ruteo - Vuex](clase10) [:material-file:](clase10.pdf) [:material-folder-zip:](clase10.zip)
-* [OAuth](clase11) [:material-file:](clase11.pdf) [:material-folder-zip:](clase11.zip)
+* [Identificación, Autenticación y Autorización - Oauth - OpenID Connect](clase11) [:material-file:](clase11.pdf) [:material-folder-zip:](clase11.zip)[:material-youtube:](https://youtu.be/P1c-7_NjjeQ)
