@@ -65,7 +65,7 @@ Por ultimo tenemos que elegir la version de VueJS en este caso vamos por la vers
   ![vue create seleccion de version](img/14_vue_version.png)
 </figure>
 
-![type:video](img/14_vue_create.mp4)
+![type:video](img/14_vue_create_v2.mp4)
 
 !!! Warning
 Recordar que tenemos que crear nuestro proyecto dentro de la carpeta `web` para que nuestra aplicación se pueda buildear
