@@ -31,7 +31,7 @@ Una vez terminada la instalación miramos si ya está disponible el comando:
 ```
 
 !!! Warning
-Tal vez esto requiera de reiniciar su terminal
+    Tal vez esto requiera de reiniciar su terminal
 
 ## Creando el template inicial
 
@@ -41,7 +41,7 @@ Para crear un nuevo proyecto debemos utilizar el comando `vue create <nombre>` q
 nos permitirá crear un nuevo proyecto de forma interactiva:
 
 !!! Info
-Instalar la versión 3 de VueJS y usar el manejador de paquetes que ya tengan instalado en su máquina (yarn o npm)
+    Instalar la versión 3 de VueJS y usar el manejador de paquetes que ya tengan instalado en su máquina (yarn o npm)
 
 Luego van a aparecer 3 opciones, una default para Vue2 otra default para Vue 3 y seleccion manual de las funcionalidades:
 
@@ -56,7 +56,9 @@ Vamos a elegir la manual con las siguientes opciones:
 </figure>
 
 [Babel](https://babeljs.io/docs/en/) es una cadena de herramientas que se utiliza principalmente para convertir el código ECMAScript 2015+ en una versión de JavaScript compatible con versiones anteriores en navegadores o entornos actuales y antiguos.
+
 [Router](https://router.vuejs.org/) VueRouter es el enrutador oficial de VueJS, permite generar rutas dinamicas para diferentes componentes.
+
 [Linter/Formatter](https://eslint.org/) ESLint analiza estáticamente en base a diferentes reglas el código para encontrar rápidamente problemas y a su vez se puede configurar para que cuando se guarde un archivo arregle problemas de sintaxis como por ejemplo Black en python.
 
 Por ultimo tenemos que elegir la version de VueJS en este caso vamos por la version 3.x
@@ -68,8 +70,8 @@ Por ultimo tenemos que elegir la version de VueJS en este caso vamos por la vers
 ![type:video](img/14_vue_create_v2.mp4)
 
 !!! Warning
-Recordar que tenemos que crear nuestro proyecto dentro de la carpeta `web` para que nuestra aplicación se pueda buildear
-y ejecutar correctamente en el servidor.
+    Recordar que tenemos que crear nuestro proyecto dentro de la carpeta `web` para que nuestra aplicación se pueda buildear
+    y ejecutar correctamente en el servidor.
 
 Terminado el comando deberíamos ver algo como esto:
 
