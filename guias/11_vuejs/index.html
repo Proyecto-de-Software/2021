@@ -1,0 +1,750 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../../images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.4">
+    
+    
+      
+        <title>VueJS - Proyecto de Software 2021</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.f7f47774.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#vue-primeros-pasos" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Proyecto de Software 2021" class="md-header__button md-logo" aria-label="Proyecto de Software 2021" data-md-component="logo">
+      
+  <img src="../../images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Proyecto de Software 2021
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              VueJS
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 10a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2m10-3a5 5 0 0 1 5 5 5 5 0 0 1-5 5H7a5 5 0 0 1-5-5 5 5 0 0 1 5-5h10M7 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3h10a3 3 0 0 0 3-3 3 3 0 0 0-3-3H7z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="red"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Inicio
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../01_teorias/" class="md-tabs__link">
+      Teorías
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../02_practicas/" class="md-tabs__link">
+      Práctica
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../03_explicaciones/" class="md-tabs__link">
+      Explicaciones
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../04_herramientas/" class="md-tabs__link">
+      Herramientas
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../01_commands/" class="md-tabs__link md-tabs__link--active">
+        Guías
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Proyecto de Software 2021" class="md-nav__button md-logo" aria-label="Proyecto de Software 2021" data-md-component="logo">
+      
+  <img src="../../images/logo.png" alt="logo">
+
+    </a>
+    Proyecto de Software 2021
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Inicio
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_teorias/" class="md-nav__link">
+        Teorías
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_practicas/" class="md-nav__link">
+        Práctica
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03_explicaciones/" class="md-nav__link">
+        Explicaciones
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_herramientas/" class="md-nav__link">
+        Herramientas
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
+      
+      <label class="md-nav__link" for="__nav_6">
+        Guías
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Guías" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Guías
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_commands/" class="md-nav__link">
+        Comandos
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_ssh/" class="md-nav__link">
+        Ssh
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_ssh_gitlab/" class="md-nav__link">
+        Ssh Gitlab
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_instalar_git/" class="md-nav__link">
+        Instalar Git
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_instalar_python/" class="md-nav__link">
+        Instalar Python
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06_manejo_de_paquetes/" class="md-nav__link">
+        Manejo de Paquetes
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07_entornos_virtuales/" class="md-nav__link">
+        Entornos Virtuales
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08_merge_request/" class="md-nav__link">
+        Merge Requests en Gitlab
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09_template/" class="md-nav__link">
+        Aplicación Base
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10_guias_de_estilo/" class="md-nav__link">
+        Guías de Estilo
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          VueJS
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        VueJS
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#instalacion-de-vuejs" class="md-nav__link">
+    Instalación de VueJS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creando-el-template-inicial" class="md-nav__link">
+    Creando el template inicial
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#subir-los-cambios-al-servidor" class="md-nav__link">
+    Subir los cambios al servidor
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#instalacion-de-vuejs" class="md-nav__link">
+    Instalación de VueJS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creando-el-template-inicial" class="md-nav__link">
+    Creando el template inicial
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#subir-los-cambios-al-servidor" class="md-nav__link">
+    Subir los cambios al servidor
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="vue-primeros-pasos">Vue, primeros pasos<a class="headerlink" href="#vue-primeros-pasos" title="Permanent link">&para;</a></h1>
+<h2 id="instalacion-de-vuejs">Instalación de VueJS<a class="headerlink" href="#instalacion-de-vuejs" title="Permanent link">&para;</a></h2>
+<p>La instalación de VueJS puede realizarse de muchas maneras. Todos los métodos disponibles
+para instalar la herramienta se encuentra en el siguiente <a href="https://v3.vuejs.org/guide/installation.html#release-note">enlace</a>.</p>
+<p>Para esta guía y como recomendación para el trabajo vamos a realizar la instalación de la
+herramienta <code>vue-cli</code> que nos permitirá tener armar una configuración inicial para nuestro
+proyecto VueJS. La guía de la misma la pueden encontrar <a href="https://v3.vuejs.org/guide/installation.html#cli">aquí</a></p>
+<p>Siguiendo la guía para instalar la herramienta <code>vue-cli</code> hacemos:</p>
+<div class="codehilite"><pre><span></span><code><span class="c1"># con yarn</span>
+yarn global add @vue/cli
+</code></pre></div>
+
+<p>O si usamos npm:</p>
+<div class="codehilite"><pre><span></span><code><span class="c1"># con npm</span>
+npm install -g @vue/cli
+</code></pre></div>
+
+<p>Una vez terminada la instalación miramos si ya está disponible el comando:</p>
+<div class="codehilite"><pre><span></span><code>❯ vue --version
+@vue/cli <span class="m">4</span>.5.15
+</code></pre></div>
+
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Tal vez esto requiera de reiniciar su terminal</p>
+</div>
+<h2 id="creando-el-template-inicial">Creando el template inicial<a class="headerlink" href="#creando-el-template-inicial" title="Permanent link">&para;</a></h2>
+<p>La documentación oficial para el uso de la herramienta <code>vue-cli</code> la encontramos <a href="https://cli.vuejs.org/">aquí</a></p>
+<p>Para crear un nuevo proyecto debemos utilizar el comando <code>vue create &lt;nombre&gt;</code> que
+nos permitirá crear un nuevo proyecto de forma interactiva:</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Instalar la versión 3 de VueJS y usar el manejador de paquetes que ya tengan instalado en su máquina (yarn o npm)</p>
+</div>
+<p>Luego van a aparecer 3 opciones, una default para Vue2 otra default para Vue 3 y seleccion manual de las funcionalidades:</p>
+<figure>
+<p><img alt="vue create opciones" src="../img/14_vue_options.png" /></p>
+</figure>
+<p>Vamos a elegir la manual con las siguientes opciones:</p>
+<figure>
+<p><img alt="vue create seleccion de features" src="../img/14_vue_feature_selection.png" /></p>
+</figure>
+<p><a href="https://babeljs.io/docs/en/">Babel</a> es una cadena de herramientas que se utiliza principalmente para convertir el código ECMAScript 2015+ en una versión de JavaScript compatible con versiones anteriores en navegadores o entornos actuales y antiguos.</p>
+<p><a href="https://router.vuejs.org/">Router</a> VueRouter es el enrutador oficial de VueJS, permite generar rutas dinamicas para diferentes componentes.</p>
+<p><a href="https://eslint.org/">Linter/Formatter</a> ESLint analiza estáticamente en base a diferentes reglas el código para encontrar rápidamente problemas y a su vez se puede configurar para que cuando se guarde un archivo arregle problemas de sintaxis como por ejemplo Black en python.</p>
+<p>Por ultimo tenemos que elegir la version de VueJS en este caso vamos por la version 3.x</p>
+<figure>
+<p><img alt="vue create seleccion de version" src="../img/14_vue_version.png" /></p>
+</figure>
+<p><iframe src="../img/14_vue_create_v2.mp4" style="position: relative; width: 100%; height: 22.172vw" frameborder="0" allowfullscreen></iframe></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Recordar que tenemos que crear nuestro proyecto dentro de la carpeta <code>web</code> para que nuestra aplicación se pueda buildear
+y ejecutar correctamente en el servidor.</p>
+</div>
+<p>Terminado el comando deberíamos ver algo como esto:</p>
+<figure>
+<p><img alt="vue create terminado" src="../img/14_vue_create_finished.png" /></p>
+</figure>
+<p>Con el proyecto creado vamos a intentar levantar el server localmente ejecutando el siguiente comando:</p>
+<figure>
+<p><img alt="vue serve" src="../img/14_vue_serve.png" /></p>
+</figure>
+<p>Levantado el servidor abrimos la aplicación en el puerto <code>8080</code> del navegador.</p>
+<figure>
+<p><img alt="Server en el Browser" src="../img/14_vue_local.png" /></p>
+</figure>
+<p>El directorio de la aplicación nos quedó con los siguientes archivos y directorios:</p>
+<figure>
+<p><img alt="Vue directories" src="../img/14_vue_directories.png" /></p>
+</figure>
+<p>El proyecto ya tiene su propio git ignore donde evita versionar archivos como el <code>node_modules</code>.
+Tener en cuenta de agregar los directorios que queramos ignorar más adelante.</p>
+<h2 id="subir-los-cambios-al-servidor">Subir los cambios al servidor<a class="headerlink" href="#subir-los-cambios-al-servidor" title="Permanent link">&para;</a></h2>
+<p>Para subir los cambios tenemos que agregar los archivos nuevos.</p>
+<figure>
+<p><img alt="Add files" src="../img/14_vue_add_files.png" /></p>
+</figure>
+<p>Luego hacer un commit y un push a master.</p>
+<figure>
+<p><img alt="commit and push" src="../img/14_vue_commit_and_push.png" /></p>
+</figure>
+<p>El servidor va a tardar unos minutos en hacer el build. Más que nada si es la primera vez.
+Luego de un rato deberíamos ver los cambios en el servidor:</p>
+<figure>
+<p><img alt="Vue remote" src="../img/14_vue_remote.png" /></p>
+</figure>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../10_guias_de_estilo/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Guías de Estilo" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Guías de Estilo
+            </div>
+          </div>
+        </a>
+      
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticy"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.709b4209.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.febc23d1.min.js"></script>
+      
+    
+  </body>
+</html>

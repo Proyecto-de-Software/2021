@@ -1,0 +1,927 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../../images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.4">
+    
+    
+      
+        <title>Guías de Estilo - Proyecto de Software 2021</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.f7f47774.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#guia-de-estilos" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Proyecto de Software 2021" class="md-header__button md-logo" aria-label="Proyecto de Software 2021" data-md-component="logo">
+      
+  <img src="../../images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Proyecto de Software 2021
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Guías de Estilo
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 10a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2m10-3a5 5 0 0 1 5 5 5 5 0 0 1-5 5H7a5 5 0 0 1-5-5 5 5 0 0 1 5-5h10M7 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3h10a3 3 0 0 0 3-3 3 3 0 0 0-3-3H7z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="red"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Inicio
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../01_teorias/" class="md-tabs__link">
+      Teorías
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../02_practicas/" class="md-tabs__link">
+      Práctica
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../03_explicaciones/" class="md-tabs__link">
+      Explicaciones
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../04_herramientas/" class="md-tabs__link">
+      Herramientas
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../01_commands/" class="md-tabs__link md-tabs__link--active">
+        Guías
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Proyecto de Software 2021" class="md-nav__button md-logo" aria-label="Proyecto de Software 2021" data-md-component="logo">
+      
+  <img src="../../images/logo.png" alt="logo">
+
+    </a>
+    Proyecto de Software 2021
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Inicio
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_teorias/" class="md-nav__link">
+        Teorías
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_practicas/" class="md-nav__link">
+        Práctica
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03_explicaciones/" class="md-nav__link">
+        Explicaciones
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_herramientas/" class="md-nav__link">
+        Herramientas
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
+      
+      <label class="md-nav__link" for="__nav_6">
+        Guías
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Guías" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Guías
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_commands/" class="md-nav__link">
+        Comandos
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_ssh/" class="md-nav__link">
+        Ssh
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_ssh_gitlab/" class="md-nav__link">
+        Ssh Gitlab
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_instalar_git/" class="md-nav__link">
+        Instalar Git
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_instalar_python/" class="md-nav__link">
+        Instalar Python
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06_manejo_de_paquetes/" class="md-nav__link">
+        Manejo de Paquetes
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07_entornos_virtuales/" class="md-nav__link">
+        Entornos Virtuales
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08_merge_request/" class="md-nav__link">
+        Merge Requests en Gitlab
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09_template/" class="md-nav__link">
+        Aplicación Base
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Guías de Estilo
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Guías de Estilo
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#generales" class="md-nav__link">
+    Generales:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nombres" class="md-nav__link">
+    Nombres
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#docstrings" class="md-nav__link">
+    Docstrings
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#imports" class="md-nav__link">
+    Imports
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#malas-ideas" class="md-nav__link">
+    Malas ideas
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fuentes" class="md-nav__link">
+    Fuentes
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11_vuejs/" class="md-nav__link">
+        VueJS
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#generales" class="md-nav__link">
+    Generales:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nombres" class="md-nav__link">
+    Nombres
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#docstrings" class="md-nav__link">
+    Docstrings
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#imports" class="md-nav__link">
+    Imports
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#malas-ideas" class="md-nav__link">
+    Malas ideas
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fuentes" class="md-nav__link">
+    Fuentes
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="guia-de-estilos">Guía de estilos<a class="headerlink" href="#guia-de-estilos" title="Permanent link">&para;</a></h1>
+<p>Las guías de estilo ayudan a los equipos de desarrollo a escribir código
+consistente simplificando su entendimiento a todos/as los/as miembros del
+equipo.</p>
+<p>Python define en <strong>PEP8</strong> como guía de estilos base y en <strong>PEP257</strong> la convención
+para Docstrings. Teniendo esta referencia vamos a mencionar las normas mas
+importantes que esperamos que traten de cumplir en el trabajo.</p>
+<p>Antes de comenzar a nombrarlas es necesario decir de una regla base a todas las
+siguientes a la hora de desarrollar una aplicación en equipo: <strong>ser
+consistentes</strong>. ¿Qué quiere decir esto? que <strong>todos los miembros sigan las mismas
+reglas para el estilo de escritura del código</strong>.</p>
+<h2 id="generales">Generales:<a class="headerlink" href="#generales" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Uso de 4 espacios en lugar de tabs. Esto puede ser configurado en su editor</li>
+<li>120 es el máximo de caracteres por línea. Preferentemente 80</li>
+<li>Dejar 2 líneas en blanco entre clases y funciones</li>
+<li>1 línea en blanco dentro de la clases entre los métodos de la misma</li>
+<li>No dejar líneas en blanco luego de la línea <code>def</code></li>
+<li>No dejar espacios dentro de los paréntesis, corchetes y las llaves</li>
+</ul>
+<div class="codehilite"><pre><span></span><code>  <span class="c1"># bien</span>
+  <span class="n">spam</span><span class="p">(</span><span class="n">ham</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="p">{</span><span class="n">eggs</span><span class="p">:</span> <span class="mi">2</span><span class="p">},</span> <span class="p">[])</span>
+
+  <span class="c1"># mal</span>
+  <span class="n">spam</span><span class="p">(</span> <span class="n">ham</span><span class="p">[</span> <span class="mi">1</span> <span class="p">],</span> <span class="p">{</span> <span class="n">eggs</span><span class="p">:</span> <span class="mi">2</span> <span class="p">},</span> <span class="p">)</span>
+</code></pre></div>
+
+<ul>
+<li>Rodear los operadores con un espacio en blanco de ambos lados</li>
+</ul>
+<div class="codehilite"><pre><span></span><code>  <span class="c1"># bien</span>
+  <span class="n">x</span> <span class="o">==</span> <span class="mi">1</span>
+
+  <span class="c1"># mal</span>
+  <span class="n">x</span><span class="o">&lt;</span><span class="mi">1</span>
+</code></pre></div>
+
+<ul>
+<li>No usar espacios en blanco alrededor del <code>=</code> cuando se pasa un <code>keyword
+  argument</code> o se define un valor por defecto en una función</li>
+</ul>
+<div class="codehilite"><pre><span></span><code>  <span class="c1"># bien</span>
+  <span class="k">def</span> <span class="nf">function_name</span><span class="p">(</span><span class="n">keyword_argument</span><span class="o">=</span><span class="n">value</span><span class="p">):</span>
+      <span class="k">pass</span>
+
+  <span class="n">function_name</span><span class="p">(</span><span class="n">keyword_argument</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+  <span class="c1"># mal</span>
+  <span class="k">def</span> <span class="nf">function_name</span><span class="p">(</span><span class="n">keyword_argument</span> <span class="o">=</span> <span class="n">value</span><span class="p">):</span>
+      <span class="k">pass</span>
+
+  <span class="n">function_name</span><span class="p">(</span><span class="n">keyword_argument</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span>
+</code></pre></div>
+
+<ul>
+<li>Usar líneas en blanco para la separación de lógica dentro de las
+  funciones/métodos siempre que esté justificado</li>
+<li>Mover los argumentos de una función de una nueva línea con indentación si no
+  entran todos en la primer línea</li>
+</ul>
+<div class="codehilite"><pre><span></span><code>  <span class="c1"># bien</span>
+  <span class="k">def</span> <span class="nf">long_function_name</span><span class="p">(</span><span class="n">var_one</span><span class="p">,</span> <span class="n">var_two</span><span class="p">,</span> <span class="n">var_three</span><span class="p">,</span>
+          <span class="n">var_four</span><span class="p">):</span>
+      <span class="nb">print</span><span class="p">(</span><span class="n">var_one</span><span class="p">)</span>
+
+  <span class="c1"># bien</span>
+  <span class="k">def</span> <span class="nf">long_function_name</span><span class="p">(</span>
+      <span class="n">var_one</span><span class="p">,</span>
+      <span class="n">var_two</span><span class="p">,</span>
+      <span class="n">var_three</span><span class="p">,</span>
+      <span class="n">var_four</span>
+  <span class="p">):</span>
+      <span class="nb">print</span><span class="p">(</span><span class="n">var_one</span><span class="p">)</span>
+</code></pre></div>
+
+<ul>
+<li>Mover las condiciones a nuevas líneas si no entran en el máximo determinado.
+Esto te ayudará a entender la condición mirando de arriba hacia abajo.</li>
+</ul>
+<div class="codehilite"><pre><span></span><code>  <span class="c1"># bien</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">this_is_one_thing</span>
+      <span class="ow">and</span> <span class="n">that_is_another_thing</span>
+      <span class="ow">or</span> <span class="n">that_is_third_thing</span>
+      <span class="ow">or</span> <span class="n">that_is_yet_another_thing</span>
+      <span class="ow">and</span> <span class="n">one_more_thing</span>
+  <span class="p">):</span>
+      <span class="n">do_something</span><span class="p">()</span>
+</code></pre></div>
+
+<ul>
+<li>Usar Strings multilíneas sin <code>\\</code>.</li>
+</ul>
+<div class="codehilite"><pre><span></span><code>  <span class="k">raise</span> <span class="ne">AttributeError</span><span class="p">(</span>
+      <span class="s1">&#39;Here is a multiline error message &#39;</span>
+      <span class="s1">&#39;shortened for clarity.&#39;</span>
+  <span class="p">)</span>
+</code></pre></div>
+
+<ul>
+<li>Use argumentos nombrados para aumentar la legibilidad.</li>
+</ul>
+<div class="codehilite"><pre><span></span><code>  <span class="c1"># bien</span>
+  <span class="n">urlget</span><span class="p">(</span><span class="s1">&#39;[http://google.com](http://google.com/)&#39;</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+
+  <span class="c1"># mal</span>
+  <span class="n">urlget</span><span class="p">(</span><span class="s1">&#39;[http://google.com](http://google.com/)&#39;</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
+</code></pre></div>
+
+<ul>
+<li>Nunca termines tus líneas con punto y coma y no las uses para tener dos
+  sentencias en la misma línea.</li>
+<li>El encadenamiento de métodos debe ser separado en múltiples líneas para mejor
+  legibilidad</li>
+</ul>
+<div class="codehilite"><pre><span></span><code>  <span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">write</span> \
+    <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s1">&#39;jdbc&#39;</span><span class="p">)</span>
+    <span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">&#39;url&#39;</span><span class="p">,</span> <span class="s1">&#39;jdbc:postgresql:dbserver&#39;</span><span class="p">)</span>
+    <span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">&#39;dbtable&#39;</span><span class="p">,</span> <span class="s1">&#39;schema.tablename&#39;</span><span class="p">)</span>
+    <span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">&#39;user&#39;</span><span class="p">,</span> <span class="s1">&#39;username&#39;</span><span class="p">)</span>
+    <span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">&#39;password&#39;</span><span class="p">,</span> <span class="s1">&#39;password&#39;</span><span class="p">)</span>
+    <span class="o">.</span><span class="n">save</span><span class="p">()</span>
+  <span class="p">)</span>
+</code></pre></div>
+
+<ul>
+<li>Siempre comience el bloque de código en una nueva línea</li>
+</ul>
+<div class="codehilite"><pre><span></span><code>  <span class="c1"># bien</span>
+  <span class="k">if</span> <span class="n">flag</span><span class="p">:</span>
+      <span class="k">return</span> <span class="kc">None</span>
+
+  <span class="c1"># mal</span>
+  <span class="k">if</span> <span class="n">flag</span><span class="p">:</span> <span class="k">return</span> <span class="kc">None</span>
+</code></pre></div>
+
+<ul>
+<li>Separa el símbolo <code>#</code> del contenido del comentario con un espacio en blanco</li>
+</ul>
+<div class="codehilite"><pre><span></span><code>  <span class="c1"># good comment</span>
+  <span class="c1">#bad comment</span>
+</code></pre></div>
+
+<h2 id="nombres">Nombres<a class="headerlink" href="#nombres" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Usar <code>snake_case</code> para módulos, variables, atributos, funciones y nombre de
+  métodos. NO USAR <code>CamelCase</code>.</li>
+<li>Usar <code>CamelCase</code> para el nombre de las clases.</li>
+<li>Los nombres deben referirse a lo que hace o contiene la variable, clase o
+  función.</li>
+<li>No incluya el tipo de la variable en su nombre. Ej: use <code>personas</code> en lugar de
+  <code>lista_personas</code>.</li>
+</ul>
+<h2 id="docstrings">Docstrings<a class="headerlink" href="#docstrings" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>Escriba los docstrings contenidos con triple comillas dobles <code>"""</code></p>
+</li>
+<li>
+<p>Escriba los docstrings para métodos que no sean tan simples. En los mismos
+  resuma descripción de comportamiento, argumentos, valores de retorno,
+  excepciones que se pueden lanzar</p>
+</li>
+</ul>
+<div class="codehilite"><pre><span></span><code>  <span class="k">def</span> <span class="nf">some_method</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">state</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+      <span class="sd">&quot;&quot;&quot;This function does something</span>
+
+<span class="sd">      :param name: The name to use</span>
+<span class="sd">      :type name: string</span>
+<span class="sd">      :param state: Current state to be in (optional, default: None)</span>
+<span class="sd">      :type state: bool</span>
+<span class="sd">      :returns:  int -- the return code</span>
+<span class="sd">      :raises: AttributeError, KeyError</span>
+<span class="sd">      &quot;&quot;&quot;</span>
+      <span class="o">...</span>
+      <span class="k">return</span> <span class="mi">0</span>
+</code></pre></div>
+
+<h2 id="imports">Imports<a class="headerlink" href="#imports" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Evite los import relativos utilice import absolutos</li>
+<li>Nunca use <code>*</code> en los imports. Siempre sea explícito sobre lo que va a importar</li>
+<li>Los imports deben escribirse en el siguiente orden separados por una línea:</li>
+<li>Módulos build-in (que vienen con Python)</li>
+<li>Módulos third-party (paquetes externos que instaló)</li>
+<li>Módulos del proyecto actual</li>
+</ul>
+<div class="codehilite"><pre><span></span><code>  <span class="kn">import</span> <span class="nn">os</span>
+  <span class="kn">import</span> <span class="nn">logging</span>
+
+  <span class="kn">import</span> <span class="nn">flask</span>
+  <span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">url_for</span>
+
+  <span class="kn">from</span> <span class="nn">app.models.user</span> <span class="kn">import</span> <span class="n">user</span>
+</code></pre></div>
+
+<h2 id="malas-ideas">Malas ideas<a class="headerlink" href="#malas-ideas" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Variables globales</li>
+<li>Usar lambdas donde no se requiere</li>
+<li>Usar funciones embebidas</li>
+</ul>
+<h2 id="fuentes">Fuentes<a class="headerlink" href="#fuentes" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://www.python.org/dev/peps/">PEPs</a></li>
+<li><a href="https://www.python.org/dev/peps/pep-0008/">PEP8</a></li>
+<li><a href="https://www.python.org/dev/peps/pep-0257/">PEP257</a></li>
+</ul>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../09_template/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Aplicación Base" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Aplicación Base
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../11_vuejs/" class="md-footer__link md-footer__link--next" aria-label="Next: VueJS" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              VueJS
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticy"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.709b4209.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.febc23d1.min.js"></script>
+      
+    
+  </body>
+</html>

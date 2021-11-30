@@ -1,0 +1,868 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../../images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.4">
+    
+    
+      
+        <title>Instalar Python - Proyecto de Software 2021</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.f7f47774.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#instalacion-de-python" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Proyecto de Software 2021" class="md-header__button md-logo" aria-label="Proyecto de Software 2021" data-md-component="logo">
+      
+  <img src="../../images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Proyecto de Software 2021
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Instalar Python
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 10a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2m10-3a5 5 0 0 1 5 5 5 5 0 0 1-5 5H7a5 5 0 0 1-5-5 5 5 0 0 1 5-5h10M7 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3h10a3 3 0 0 0 3-3 3 3 0 0 0-3-3H7z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="red"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Inicio
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../01_teorias/" class="md-tabs__link">
+      Teorías
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../02_practicas/" class="md-tabs__link">
+      Práctica
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../03_explicaciones/" class="md-tabs__link">
+      Explicaciones
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../04_herramientas/" class="md-tabs__link">
+      Herramientas
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../01_commands/" class="md-tabs__link md-tabs__link--active">
+        Guías
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Proyecto de Software 2021" class="md-nav__button md-logo" aria-label="Proyecto de Software 2021" data-md-component="logo">
+      
+  <img src="../../images/logo.png" alt="logo">
+
+    </a>
+    Proyecto de Software 2021
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Inicio
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_teorias/" class="md-nav__link">
+        Teorías
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_practicas/" class="md-nav__link">
+        Práctica
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03_explicaciones/" class="md-nav__link">
+        Explicaciones
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_herramientas/" class="md-nav__link">
+        Herramientas
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
+      
+      <label class="md-nav__link" for="__nav_6">
+        Guías
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Guías" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Guías
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_commands/" class="md-nav__link">
+        Comandos
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_ssh/" class="md-nav__link">
+        Ssh
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_ssh_gitlab/" class="md-nav__link">
+        Ssh Gitlab
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_instalar_git/" class="md-nav__link">
+        Instalar Git
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Instalar Python
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Instalar Python
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#por-que-usar-una-herramienta-para-manejar-versiones" class="md-nav__link">
+    ¿Por qué usar una herramienta para manejar versiones?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linux-y-macos" class="md-nav__link">
+    Linux y MacOS
+  </a>
+  
+    <nav class="md-nav" aria-label="Linux y MacOS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dependencias-necesarias" class="md-nav__link">
+    Dependencias necesarias
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instalacion-con-git-linux-y-macos-recomendada" class="md-nav__link">
+    Instalación con Git (Linux y MacOS) RECOMENDADA
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instalacion-con-brew-macos" class="md-nav__link">
+    Instalación con brew (MacOS)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uso-de-pyenv" class="md-nav__link">
+    Uso de pyenv
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalacion-en-windows" class="md-nav__link">
+    Instalación en Windows
+  </a>
+  
+    <nav class="md-nav" aria-label="Instalación en Windows">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#desde-instalador" class="md-nav__link">
+    Desde instalador
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06_manejo_de_paquetes/" class="md-nav__link">
+        Manejo de Paquetes
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07_entornos_virtuales/" class="md-nav__link">
+        Entornos Virtuales
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08_merge_request/" class="md-nav__link">
+        Merge Requests en Gitlab
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09_template/" class="md-nav__link">
+        Aplicación Base
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10_guias_de_estilo/" class="md-nav__link">
+        Guías de Estilo
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11_vuejs/" class="md-nav__link">
+        VueJS
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#por-que-usar-una-herramienta-para-manejar-versiones" class="md-nav__link">
+    ¿Por qué usar una herramienta para manejar versiones?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linux-y-macos" class="md-nav__link">
+    Linux y MacOS
+  </a>
+  
+    <nav class="md-nav" aria-label="Linux y MacOS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dependencias-necesarias" class="md-nav__link">
+    Dependencias necesarias
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instalacion-con-git-linux-y-macos-recomendada" class="md-nav__link">
+    Instalación con Git (Linux y MacOS) RECOMENDADA
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instalacion-con-brew-macos" class="md-nav__link">
+    Instalación con brew (MacOS)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uso-de-pyenv" class="md-nav__link">
+    Uso de pyenv
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalacion-en-windows" class="md-nav__link">
+    Instalación en Windows
+  </a>
+  
+    <nav class="md-nav" aria-label="Instalación en Windows">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#desde-instalador" class="md-nav__link">
+    Desde instalador
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="instalacion-de-python">Instalación de Python<a class="headerlink" href="#instalacion-de-python" title="Permanent link">&para;</a></h1>
+<p>En esta guía vamos a ver distintas formas de realizar la instalación de
+la versión específica de <strong>Python</strong> que se utilizará en la cátedra para distintos
+sistemas operativos.</p>
+<p>El objetivo es que todos los alumnos que cursen la cátedra puedan instalar
+en sus sistemas operativos la versión específica de <strong>Python</strong> que vamos a usar
+dentro de la cátedra.</p>
+<p>El mecanismo para esto es utilizar una herramienta de manejo de versiones para
+<strong>Python</strong> (Python Versión Manager) en los sistemas operativos Linux y MacOS.</p>
+<p>En el caso del sistema operativo Windows no vamos a usar esta herramienta ya
+que no funcionan del todo bien, y tampoco algunas alternativas que probamos. En
+este caso vamos a instalar la versión específica de <strong>Python</strong> que utilicemos.</p>
+<h2 id="por-que-usar-una-herramienta-para-manejar-versiones">¿Por qué usar una herramienta para manejar versiones?<a class="headerlink" href="#por-que-usar-una-herramienta-para-manejar-versiones" title="Permanent link">&para;</a></h2>
+<p>La idea de usar este tipo de herramientas son:</p>
+<ul>
+<li>Instalar prácticamente cualquier versión de <strong>Python</strong> (o del lenguaje que sea)</li>
+<li>Permitir tener instaladas múltiples versiones</li>
+</ul>
+<p>Otro objetivo para esta cátedra es lograr que todos ustedes tengan exactamente
+la misma versión de <strong>Python</strong>.</p>
+<p>La herramienta que vamos a usar es <a href="https://github.com/pyenv/pyenv"><code>pyenv</code></a></p>
+<h2 id="linux-y-macos">Linux y MacOS<a class="headerlink" href="#linux-y-macos" title="Permanent link">&para;</a></h2>
+<h3 id="dependencias-necesarias">Dependencias necesarias<a class="headerlink" href="#dependencias-necesarias" title="Permanent link">&para;</a></h3>
+<p>Para que <code>pyenv</code> puede realizar la instalación de las distintas versiones de <code>Python</code>
+de manera correcta es necesario contar algunas dependencias de su sistema operativo.
+Dependiendo del mismo las instrucciones de instalación pueden encontrarse en el
+siguiente enlace de la documentación de <code>pyenv</code> - <a href="https://github.com/pyenv/pyenv/wiki#suggested-build-environment">Suggested build environment</a>.</p>
+<h3 id="instalacion-con-git-linux-y-macos-recomendada">Instalación con Git (Linux y MacOS) RECOMENDADA<a class="headerlink" href="#instalacion-con-git-linux-y-macos-recomendada" title="Permanent link">&para;</a></h3>
+<p>Hacer el <em>checkout</em> de <code>pyenv</code> en el directorio donde quieras que se instale.
+Un buen lugar puede ser <code>$HOME/.pyenv</code>.</p>
+<div class="codehilite"><pre><span></span><code>git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+</code></pre></div>
+
+<p>Define la variable de entorno <code>PYENV_ROOT</code> para tener disponible el <em>path</em> donde
+fue clonado el repositorio y agrega <code>$PYENV_ROOT/bin</code> a la variable <code>$PATH</code> para
+tener acceso al comando <code>pyenv</code> en la terminal.</p>
+<div class="codehilite"><pre><span></span><code><span class="nb">echo</span> <span class="s1">&#39;export PYENV_ROOT=&quot;$HOME/.pyenv&quot;&#39;</span> &gt;&gt; ~/.bash_profile
+<span class="nb">echo</span> <span class="s1">&#39;export PATH=&quot;$PYENV_ROOT/bin:$PATH&quot;&#39;</span> &gt;&gt; ~/.bash_profile
+</code></pre></div>
+
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<ul>
+<li>Si usas <strong>ZSH</strong> modifica el comando con <code>~/.zshrc</code> en lugar de
+<code>~/.bash_profile</code>.</li>
+<li>Para <strong>Ubuntu</strong> y <strong>Fedora</strong> usa <code>~/.bashrc</code> en lugar de
+<code>~/.bash_profile</code>.</li>
+</ul>
+</div>
+<p>Finalmente para terminar de configurarlo y tener el autocompletado en la consola
+ejecuta el siguiente comando:</p>
+<div class="codehilite"><pre><span></span><code><span class="nb">echo</span> -e <span class="s1">&#39;if command -v pyenv 1&gt;/dev/null 2&gt;&amp;1; then\n  eval &quot;$(pyenv init -)&quot;\nfi&#39;</span> &gt;&gt; ~/.bash_profile
+</code></pre></div>
+
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Al igual que en el paso anterior reemplaza con <code>~/.zshrc</code> o <code>~/.bashrc</code> en
+el comando según corresponda.</p>
+</div>
+<p>Luego reiniciar la terminal para que tome los cambios.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Guía completa en el <a href="https://github.com/pyenv/pyenv">README de pyenv</a>.</p>
+</div>
+<h3 id="instalacion-con-brew-macos">Instalación con brew (MacOS)<a class="headerlink" href="#instalacion-con-brew-macos" title="Permanent link">&para;</a></h3>
+<p>Se puede instalar <code>pyenv</code> usando el manejador de paquetes
+<a href="https://brew.sh/">Homebrew</a> para MacOS.</p>
+<div class="codehilite"><pre><span></span><code>brew update
+brew install pyenv
+</code></pre></div>
+
+<h3 id="uso-de-pyenv">Uso de <code>pyenv</code><a class="headerlink" href="#uso-de-pyenv" title="Permanent link">&para;</a></h3>
+<p>Para buscar que versión de <strong>Python</strong> queremos instalar podemos usar:</p>
+<div class="codehilite"><pre><span></span><code>pyenv install <span class="m">3</span>.6.8
+</code></pre></div>
+
+<p>Ahora podemos seleccionar esta versión como global</p>
+<div class="codehilite"><pre><span></span><code>pyenv global <span class="m">3</span>.6.8
+</code></pre></div>
+
+<p>o como versión local en el directorio que nos encontremos</p>
+<div class="codehilite"><pre><span></span><code>pyenv <span class="nb">local</span> <span class="m">3</span>.6.8
+</code></pre></div>
+
+<h2 id="instalacion-en-windows">Instalación en Windows<a class="headerlink" href="#instalacion-en-windows" title="Permanent link">&para;</a></h2>
+<h3 id="desde-instalador">Desde instalador<a class="headerlink" href="#desde-instalador" title="Permanent link">&para;</a></h3>
+<p>Descarga el instalador <a href="https://www.python.org/ftp/python/3.6.8/python-3.6.8-amd64-webinstall.exe">aquí</a></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Tener en cuenta de seleccionar el box de abajo para agregar el ejecutable de
+Python al PATH del sistema.</p>
+<p><img alt="Python Windows Installer" src="../img/python-win.png" /></p>
+</div>
+<p>Otros instaladores: https://www.python.org/downloads/release/python-368/</p>
+<p>Ahora tenemos la versión de Python que necesitamos en nuestro sistema y estamos
+listo para utilizarlo.</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../04_instalar_git/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Instalar Git" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Instalar Git
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../06_manejo_de_paquetes/" class="md-footer__link md-footer__link--next" aria-label="Next: Manejo de Paquetes" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Manejo de Paquetes
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticy"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.709b4209.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.febc23d1.min.js"></script>
+      
+    
+  </body>
+</html>
