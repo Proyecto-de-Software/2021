@@ -42,3 +42,8 @@ Información de la infraestructura del servidor de la asignatura Proyecto de Sof
     - Se actualiza el c&oacute;digo al &uacute;ltimo commit de la rama <strong>master</strong>.
     - Se instala en el virtualenv lo que se encuentre en <strong>requirements.txt</strong>.
     - Se hace un reload de la aplicaci&oacute;n.
+
+* Carpetas con permiso de escritura en el servidor:
+    - Tenemos 2 carpetas a las cuales se le da permisos de escritura (<strong>deben estar creadas</strong>).
+        - <strong>/uploads</strong>
+        - <strong>/app/static/uploads</strong>.
